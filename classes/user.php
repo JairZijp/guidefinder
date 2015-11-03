@@ -1,0 +1,133 @@
+<?php
+include('password.php');
+class User extends Password{
+
+    private $_db;
+
+    function __construct($db){
+    	parent::__construct();
+
+    	$this->_db = $db;
+    }
+
+	private function get_user_hash($username){
+
+		try {
+			$stmt = $this->_db->prepare('SELECT password FROM members WHERE username = :username AND active="Yes" ');
+			$stmt->execute(array('username' => $username));
+
+			$row = $stmt->fetch();
+			return $row['password'];
+
+		} catch(PDOException $e) {
+		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
+		}
+	}
+	public function getUserData($username) {
+
+        $result = $this->_db->prepare('SELECT * FROM members WHERE username = :username AND username != "admin"');
+
+        $result->execute(array('username' => $username));
+
+        $userInfo = $result->fetchAll();
+
+		return $userInfo;
+    }
+
+    public function updateUserData($username,$email,$firstname,$lastname,$address,$zipcode,$city,$phone,$image,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH) {
+        $result = $this->_db->prepare('UPDATE members SET firstname = :firstname, lastname = :lastname, email = :email, city = :city, address = :address, zipcode = :zipcode, phone = :phone, image = :image, description = :description, NL = :NL, GE = :GE, ES = :ES, RU = :RU, EN = :EN, FR = :FR, IT = :IT, CH = :CH WHERE username = :username');
+
+        $result->execute(array(
+            'username' => $username,
+            ':email' => $email,
+            ':firstname' => $firstname,
+            ':lastname' => $lastname,
+            ':address' => $address,
+            ':zipcode' => $zipcode,
+            ':city' => $city,
+            ':phone' => $phone,
+            ':image' => $image,
+            ':description' => $description,
+            ':NL' => $NL,
+            ':GE' => $GE,
+            ':EN' => $EN,
+            ':RU' => $RU,
+            ':CH' => $CH,
+            ':ES' => $ES,
+            ':FR' => $FR,
+            ':IT' => $IT
+        ));
+
+        return $result;
+
+    }
+
+    public function getUserTour($username) {
+
+        $result = $this->_db->prepare('SELECT * FROM tours WHERE username = :username ');
+
+        $result->execute(array('username' => $username));
+
+        $tourInfo = $result->fetchAll();
+
+        return $tourInfo;
+
+
+    }
+
+    public function getAllGuides() {
+
+        $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes" AND activeAdmin = "Yes"');
+
+        $result->execute();
+
+        $allGuides = $result->fetchAll();
+
+        return $allGuides;
+    }
+
+    public function addTour($memberID, $username, $name, $image, $price, $description, $adults, $aged, $children, $disabled) {
+        $statement = $this->_db->prepare('INSERT INTO tours(memberID, username, name, image, price, description, adults, aged, children, disabled) VALUES (:memberID, :username, :name, :image, :price, :description, :adults, :aged, :children, :disabled)');
+
+        $statement->execute(array(
+            "memberID" => $memberID,
+            "username" => $username,
+            "name" => $name,
+            "image" => $image,
+            "price" => $price,
+            "description" => $description,
+            "adults" => $adults,
+            "aged" => $aged,
+            "children" => $children,
+            "disabled" => $disabled
+        ));
+
+        return $statement;
+    }
+
+	public function login($username,$password){
+
+		$hashed = $this->get_user_hash($username);
+
+		if($this->password_verify($password,$hashed) == 1){
+
+		    $_SESSION['loggedin'] = true;
+		    return true;
+		}
+	}
+
+	public function logout(){
+		session_destroy();
+	}
+
+	public function is_logged_in(){
+		if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+			return true;
+		}
+	}
+
+
+}
+
+
+?>

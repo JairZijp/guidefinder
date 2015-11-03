@@ -1,0 +1,379 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+    margin: 80px 0 0 0;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    background-color: #fff;
+    color: #333;
+}
+h1, h2, h3 {
+    font-weight: 600;
+}
+.nobor {
+    border: 0;
+}
+.grey {
+    color: #999;
+}
+.stap {
+    width: 50px;
+    height: 50px;
+    background-color: #aaa;
+    margin: 0 20px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 600;
+    float: left;
+    line-height: 50px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.stap-text {
+    float: left;
+    padding: 15px;
+}
+.bg-danger {
+    padding: 10px;
+}
+.lijn {
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.btn-primary {
+    background: #2980b9;
+}
+.gidscontainer {
+    height: auto;
+    border-left: 1px solid #2980b9;
+    border-bottom: 1px solid #2980b9;
+    border-right: 1px solid #2980b9;
+}
+.gidspagina-actief, .gidspagina-actief:focus {
+    color: #333;
+    text-decoration: none;
+}
+.gidspagina-actief:hover {
+    text-decoration: none;
+    color: #333;
+}
+.gidspagina, .gidspagina:focus {
+    color: #999;
+    text-decoration: none;
+}
+.gidspagina:hover {
+    text-decoration: none;
+    -webkit-transition: 100ms ease-in-out 100ms;
+    -moz-transition: 100ms ease-in-out 100ms;
+    -o-transition: 100ms ease-in-out 100ms;
+    transition: 100ms ease-in-out 100ms;
+    color: #2980b9;
+}
+.taal-titel {
+    padding: 0 0 0 10px;
+}
+.taal-vlag {
+    max-width: 20px;
+    margin: -3px 0 0 0;
+}
+.taal-vlag-profiel {
+    max-width: 20px;
+    margin: 3px 5px 0 0;
+}
+ol.breadcrumb {
+    margin:0;
+    padding: 20px 0 0 0;
+    background: none;
+}
+div.taal-houder {
+    margin: 20px 0;
+}
+div.taal {
+    margin: 8px 0 0 0;
+}
+h2.titel {
+    margin: 0;
+    padding: 10px;
+}
+.pad0 {
+    padding: 0;
+}
+.topbottom20 {
+    margin: 20px 0;
+}
+.top20 {
+    margin-top: 20px;
+}
+.bottom20 {
+    margin-bottom: 20px;
+}
+.stap-actief {
+    background-color: #2980b9;
+}
+.actief {
+    border-left: 1px solid #2980b9;
+    border-right: 1px solid #2980b9;
+    border-top: 1px solid #2980b9;
+}
+.border {
+    border-bottom: 1px solid #2980b9;
+}
+.center {
+    text-align: center;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    font-weight: 400;
+}
+.vragen {
+    padding: 30px;
+    background: #f39c12;
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+    border-bottom: 2px solid #e67e22;
+}
+.volgende {
+    width: 100%;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #4aa3df;
+    color: #fff;
+    border: none;
+}
+.houder-nummers {
+    margin-top: 60px;
+}
+/* ------------------------------ All Guides page -------------------------------- */
+
+.user-block {
+    margin-top: 35px;
+    padding: 20px;
+    padding-left: 25px;
+    background-color: #E9EAED;
+}
+.user-list-image {
+    border-radius: 50%;
+}
+
+/* ----------------------------- Profile pagina ---------------------------------- */
+.user-image {
+    border-radius: 50%;
+    border: 3px solid #eee;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: #fff;
+}
+.tour {
+    padding: 15px;
+    background: rgba(102, 102, 102, .3);
+    border-radius: 3px;
+}
+.tour-image {
+    width: 100%;
+}
+
+/*      CSS voor alle pagina's!     */
+
+.navbar {
+    padding: 15px 0;
+    height: auto; 
+    background-color: #4aa3df;
+    border: 0;
+}
+h1, h2, h3 {
+    font-weight: 600;
+}
+#navbar-main > ul > li > a {
+    color: #fff;
+}
+#navbar-main > ul > li.active a {
+     background: #2980b9;
+}
+.navbar-brand {
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+.navbar-login {
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size {
+    font-size: 87px;
+}
+.blauw {
+    height: 40%;
+    width: 100%;
+    background: #4aa3df;
+    position: relative;
+    text-align: center;
+    top: 0;
+}
+#pijltje {
+    margin: 0 auto;
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	
+	border-top: 25px solid #4aa3df;
+}
+.intro .intro-body .brand-heading {
+    margin: 20% 0 0 0 ;
+    font-size: 65px;
+    color: #fff;
+}
+h2.intro-text {
+    font-size: 35px;
+    color: #fff;
+}
+.fa-search:before {
+    content: "\f002";
+    color: #666;
+    font-size: 6em;
+}
+#maps {
+    margin: -25px 0 0 0;
+    width: 100%;
+    min-height: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+}
+.zoeken {
+}
+#vind {
+    color: #666;
+    text-transform: none;
+    margin: 20px 0;
+}
+button#here {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 3px;
+    border-bottom: 2px solid #e67e22;
+    color: #fff;
+}
+button#here:hover {
+    background-color: #f3af12;
+    transition: all ease-in-out 100ms;
+}
+#page-top > header > div > div.maps > div > div > div > a {
+    color: #fff;
+}
+span.nummer {
+    padding: 5px 12px;
+    background: #666;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 3px;
+    float: left;
+}
+h4.titel {
+    padding: 10px 0 0 0;
+}
+.download-section {
+    background: url(../images/homepage/amsterdam-guidefinder.jpg);
+    background-size: cover;
+}
+/*Footer*/
+.footer-distributed{
+	background-color: #333;
+    border-top: 2px solid #333;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 55px 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}

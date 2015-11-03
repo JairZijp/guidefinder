@@ -1,0 +1,49 @@
+.navbar-login {
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size {
+    font-size: 87px;
+}
+
+div.collapse.navbar-collapse > ul > li > a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+}
+div.collapse.navbar-collapse > ul > li > a:focus {
+    color: #fff;
+    background: rgba(41, 128, 185, 0.2);
+}
+div.collapse.navbar-collapse > ul > li > a:hover {
+    color: #fff;
+    background: rgba(41, 128, 185, 0.4);
+}
+
+div.collapse.navbar-collapse > ul > li.active > a {
+    color: #fff;
+    background: #2980b9;
+    
+}
+div.collapse.navbar-collapse > ul > li.active:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(41, 128, 185, 0);
+	border-top-color: #2980b9;
+	border-width: 8px;
+	margin-left: -8px;
+}
