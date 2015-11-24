@@ -28,7 +28,7 @@ require('layout/header.php');
 					<img class="user-image"src="images/profile/<?= $info['image']; ?>">
 				</div>
 				<div class="col-md-4">
-                    <p>Name: <b><?= $info['firstname'];?> <?= $info['lastname']; ?></b></p> 
+                    <p>Name: <b><?= $info['firstname'];?> <?= $info['lastname']; ?></b></p>
                     <p>Email: <b><code><?= $info['email']; ?></code></b></p>
 					<p>City: <b><?= $info['city']; ?></b></p>
 					<p>Zipcode: <b><?= $info['zipcode']; ?></b></p>
@@ -64,7 +64,7 @@ require('layout/header.php');
 				?>
 
 				<hr>
-				
+
 				<h2>Tours</h2>
 
 				<?php
@@ -72,7 +72,7 @@ require('layout/header.php');
 
 				foreach($tourInfo as $infoTour) {
 					?>
-					<div class="col-md-4">
+					<div class="col-md-6">
 					<div class="tour">
 						<img class="tour-image" src="images/tours/<?= $infoTour['image']; ?>">
 						<h3><?= $infoTour['name'];?></h3>

@@ -30,10 +30,7 @@ switch ($page) {
 		$title = 'All Guides';
 		include('views/allGuides.php');
 		break;
-	case 'admin':
-		$title = 'Admin inlog';
-		include('views/admin.php');
-		break;
+
 	default:
 		$title = 'Guide Finder';
 		include ('views/home.php');

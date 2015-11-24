@@ -26,8 +26,6 @@ try {
     echo '<p class="bg-danger">'.$e->getMessage().'</p>';
     exit;
 }
-
-//include the user class, pass in the database connection
-include('classes/user.php');
+include('classes/User.php');
 $user = new User($db);
 ?>

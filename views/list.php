@@ -1,7 +1,6 @@
-<hr>
-<hr>
 <div class="container">
     <div class="row">
+
         <table class="tftable" border="1">
             <tr>
                 <th>Username</th>
@@ -14,10 +13,10 @@
                 <th>Description</th>
                 <th>Verified</th>
             </tr>
+            <?php $userInfo = $user->getAllGuidesAdmin();
+            foreach($userInfo as $info) { ?>
         <?php
-        if (isset($_SESSION['admin'])) {
-            $result = $mysqli->query("SELECT * FROM members");
-            while ($info = $result->fetch_assoc()) {
+
                 echo '<tr>
 						<td>' . $info['username'] . '</td>
 						<td>' . $info['email'] .  '</td>
@@ -48,11 +47,18 @@
 <input class="btn" type="submit" name="verify" value="Verify" id="verify">
 </form>
     <?php
+        $mysqli = new mysqli('localhost', 'root', 'admin', 'tester');
 
+        if ($mysqli->connect_errno) {
+            echo "Failed to connect to MySQL:
+            (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+        }
+
+        mysqli_set_charset($mysqli,"utf8");
     if(isset($_POST['verify'])){
         $verify_id = $_POST['checkbox'];
         $rs = $mysqli->query("UPDATE members SET activeAdmin = 'Yes' WHERE memberID ='$verify_id'");
-        echo "<script> window.location = 'index.php';</script>";
-    } } ?>
+        echo "<script> window.location = 'admin.php';</script>";
+    }  ?>
     </div>
 </div>
