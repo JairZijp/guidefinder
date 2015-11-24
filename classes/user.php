@@ -1,5 +1,5 @@
 <?php
-include('password.php');
+include('Password.php');
 class User extends Password{
 
     private $_db;
@@ -11,8 +11,7 @@ class User extends Password{
     }
 
 	private function get_user_hash($username){
-
-		try {
+        try {
 			$stmt = $this->_db->prepare('SELECT password FROM members WHERE username = :username AND active="Yes" ');
 			$stmt->execute(array('username' => $username));
 
@@ -25,7 +24,7 @@ class User extends Password{
 	}
 	public function getUserData($username) {
 
-        $result = $this->_db->prepare('SELECT * FROM members WHERE username = :username AND username != "admin"');
+        $result = $this->_db->prepare('SELECT * FROM members WHERE username = :username');
 
         $result->execute(array('username' => $username));
 
@@ -86,8 +85,8 @@ class User extends Password{
         return $allGuides;
     }
 
-    public function addTour($memberID, $username, $name, $image, $price, $description, $adults, $aged, $children, $disabled) {
-        $statement = $this->_db->prepare('INSERT INTO tours(memberID, username, name, image, price, description, adults, aged, children, disabled) VALUES (:memberID, :username, :name, :image, :price, :description, :adults, :aged, :children, :disabled)');
+    public function addTour($memberID, $username, $name, $image, $price, $description, $adults, $aged, $children, $disabled,$monday,$tuesday,$wednesday,$thursday,$friday,$saturday,$sunday) {
+        $statement = $this->_db->prepare('INSERT INTO tours(memberID, username, name, image, price, description, adults, aged, children, disabled,monday,tuesday,wednesday,thursday,friday,saturday,sunday) VALUES (:memberID, :username, :name, :image, :price, :description, :adults, :aged, :children, :disabled,:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday)');
 
         $statement->execute(array(
             "memberID" => $memberID,
@@ -99,12 +98,27 @@ class User extends Password{
             "adults" => $adults,
             "aged" => $aged,
             "children" => $children,
-            "disabled" => $disabled
+            "disabled" => $disabled,
+            "monday" => $monday,
+            "tuesday" => $tuesday,
+            "wednesday" => $wednesday,
+            "thursday" => $thursday,
+            "friday" => $friday,
+            "saturday" => $saturday,
+            "sunday" => $sunday
         ));
 
         return $statement;
     }
+    public function getAllGuidesAdmin(){
+        $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes"');
 
+        $result->execute();
+
+        $allGuides = $result->fetchAll();
+
+        return $allGuides;
+    }
 	public function login($username,$password){
 
 		$hashed = $this->get_user_hash($username);
@@ -128,6 +142,4 @@ class User extends Password{
 
 
 }
-
-
 ?>

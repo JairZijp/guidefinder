@@ -7,12 +7,37 @@
     <link rel="stylesheet" href="css/bootstrap-select.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/ingelogd.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
+
+<!--    Plaatsnamen voor homepage -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    var availableTags = [
+      "Amsterdam",
+      "Alkmaar",
+      "Almere",
+      "Beverwijk",
+      "Brabant",
+      "Den Haag",
+      "Groningen",
+      "Rotterdam",
+      "Utrecht",
+      "Zwolle"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+</script>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -71,6 +96,9 @@
                             <li class="divider navbar-login-session-bg"></li>
                             <li><a href='edit.php'>Edit Profile <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
                             <li><a href='addTour.php'>Add Tour <span class="glyphicon glyphicon-flag pull-right"></span></a></li>
+                            <?php if($info['username'] == "admin"){ ?>
+                            <li><a href='admin.php'>Admin panel <span class="glyphicon glyphicon-flag pull-right"></span></a></li>
+                            <?php } ?>
                             <li><a href='logout.php'>Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
                         </ul>
                     </li>
