@@ -8,11 +8,11 @@ date_default_timezone_set('Europe/London');
 //database credentials
 define('DBHOST','localhost');
 define('DBUSER','root');
-define('DBPASS','admin');
+define('DBPASS','root');
 define('DBNAME','tester');
 
 //application address
-define('DIR','http://jairzijp.nl/yourguide/');
+define('DIR','http://localhost:8888/Guidefinder/');
 define('SITEEMAIL','noreply@domain.com');
 
 try {
