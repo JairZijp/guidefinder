@@ -58,8 +58,6 @@
     //execute geolocation
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(GoogleMap, showAmsterdam);
-    } 
-    else {
     }
 </script>
 
