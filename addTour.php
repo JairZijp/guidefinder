@@ -17,9 +17,9 @@ require('layout/header.php');
 
             <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
                 <?php
-		$userInfo = $user->getUserData($_SESSION['username']);
-		foreach($userInfo as $info) {
-		?>
+            		$userInfo = $user->getUserData($_SESSION['username']);
+            		foreach($userInfo as $info) {
+            		?>
                     <h2>Add Tour</h2>
                     <hr>
                     <form method="post" enctype="multipart/form-data">
@@ -29,7 +29,7 @@ require('layout/header.php');
                             </p>
                         </div>
                         <div class="form-group">
-                            <p>Price:
+                            <p><b>Price p.p</b>
                                 <input type="number" class="form-control input-md" name="price" placeholder="Price">
                             </p>
                         </div>
@@ -39,10 +39,7 @@ require('layout/header.php');
 
 
             	<p>Description: <textarea type="text" class="form-control input-md" name="description" placeholder="Description"></textarea></p>
-
-
-
-            <div class="form-group">
+                <div class="form-group">
                 Monday:
                 <input type="time" name="monday">
                 <input type="time" name="monday2">
@@ -141,6 +138,7 @@ require('layout/header.php');
 			//$newName = md5(time().$_FILES['image']['tmp_name']). '.jpg';
 			$user->addTour($memberIDs,$usersname,$_POST['name'],$newName . $extensie,$_POST['price'],$_POST['description'],$adults,$aged,$children,$disabled,$monday,$tuesday,$wednesday,$thursday,$friday,$saturday,$sunday);
             //move_uploaded_file($_FILES['image']['tmp_name'], 'images/tours/' . $newName);
+            echo "<script> window.location = 'memberpage.php';</script>";
 			header('Location: memberpage.php');
 		}
 	}

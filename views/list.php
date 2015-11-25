@@ -13,9 +13,10 @@
                 <th>Description</th>
                 <th>Verified</th>
             </tr>
-            <?php $userInfo = $user->getAllGuidesAdmin();
+            <?php
+            $userInfo = $user->getAllGuidesAdmin();
             foreach($userInfo as $info) { ?>
-        <?php
+                <?php
 
                 echo '<tr>
 						<td>' . $info['username'] . '</td>
@@ -47,7 +48,7 @@
 <input class="btn" type="submit" name="verify" value="Verify" id="verify">
 </form>
     <?php
-        $mysqli = new mysqli('localhost', 'root', 'admin', 'tester');
+        $mysqli = new mysqli('localhost', 'jairzxw85_guide', 'guide', 'jairzxw85_guide');
 
         if ($mysqli->connect_errno) {
             echo "Failed to connect to MySQL:
