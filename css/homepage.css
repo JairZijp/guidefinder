@@ -200,9 +200,6 @@ h1, h2, h3 {
     float: left;
     padding: 15px;
 }
-.bg-danger {
-    padding: 10px;
-}
 .lijn {
     height: 1px;
     background: #ccc;

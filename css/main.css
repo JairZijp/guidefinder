@@ -1,5 +1,8 @@
 .bg-danger, .bg-success {
-	padding: 0 5px;
+	padding: 10px;
+}
+.form-control {
+    margin: 5px 0;
 }
 
 a {
