@@ -101,12 +101,7 @@
                             <div class="row marto20">
                                 <nav>
                                     <ul class="pagination">
-                                        <li>
-                                            <a href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                        </li>
-                                        <li class="active "><a href="#">1</a></li>
+                                        <li class="active"><a href="#">1</a></li>
                                         <li><a href="#">2</a></li>
                                         <li><a href="#">3</a></li>
                                         <li><a href="#">4</a></li>
@@ -121,12 +116,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 hidden">
-                        <div class="vragen">
-                            <h2>Find your guide in 5 steps!</h2>
-                            <h4>With how many people are you going to take the tour?</h4>
-                            <div class="col-xs-10">
-                                <select class="form-control">
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                        <div class="col-sm-offset-2 col-xs-12 col-sm-8">
+                            <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
+                        <div class="col-xs-12">
+                            <h2>Step 2</h2>
+                            <h3>With how many people are you going to take the tour?</h3></div>
+                        <div class="col-sm-10 col-xs-12 ui-widget marto20">
+                            <select class="form-control">
                                     <option value="" disabled selected>Select how many persons...</option>
                                     <option value="">1 person</option>
                                     <option value="">2 persons</option>
@@ -150,31 +147,47 @@
                                     <option value="">20 persons</option>
                                     <option value="" disabled>20+ persons - Please contact us</option>
                                 </select>
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                <button type="button" class="btn btn-default volgende">Next &raquo;</button>
-                            </div>
-                            <div class="row houder-nummers">
-                                <button type="button" class="btn btn-default  btn-circle"><b>1</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>2</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>3</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>4</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>5</b></button>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 marto20">
+                            <button type="button" class="btn btn-default volgende">Next &raquo;</button>
+                        </div>
+                        <div class="col-sd-offset-3 col-sd-6 col-xs-12">
+                            <div class="row marto20">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 hidden">
-                        <div class="vragen">
-                            <h2>Find your guide in 5 steps!</h2>
-                            <h4>Are there children, disabled or elder persons involved?</h4>
-                            <div class="col-xs-12">
-                                <div class="col-sm-10 col-xs-12">
-                                    <div class="col-xs-6">
-                                        <div class="checkbox text-left">
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                        <div class="col-sm-offset-2 col-xs-12 col-sm-8">
+                            <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
+                        <div class="col-xs-12">
+                            <h2>Step 3</h2>
+                            <h3>Are there children, disabled or elder persons involved?</h3></div>
+                        <div class="col-sm-10 col-xs-12 ui-widget marto20">
+                            <div class="col-xs-6">
+                                    <div class="checkbox text-left">
                                             <label>
                                                 <input type="checkbox" value="">Only adults
                                             </label>
-                                        </div>
+                                    </div>
                                     </div>
                                     <div class="col-xs-6">
                                         <div class="checkbox text-left">
@@ -197,55 +210,131 @@
                                             </label>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-2 col-xs-12">
-                                    <button type="button" class="btn btn-default volgende">Next &raquo;</button>
-                                </div>
-                            </div>
-                            <div class="row houder-nummers">
-                                <button type="button" class="btn btn-default  btn-circle"><b>1</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>2</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>3</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>4</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>5</b></button>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 marto20">
+                            <button type="button" class="btn btn-default volgende">Next &raquo;</button>
+                        </div>
+                        <div class="col-sd-offset-3 col-sd-6 col-xs-12">
+                            <div class="row marto20">
+                                <nav>
+                                    <ul class="pagination">
+                                       <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li class="active"><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 hidden">
-                        <div class="vragen">
-                            <h2>Find your guide in 5 steps!</h2>
-                            <h4>Pick a date...</h4>
-                            <div class="col-sm-10 col-xs-12">
-                                <input type="text" name="where" id="email" class="form-control input-md" placeholder="Fill in a placename.." value="<?= $info[''] ?>" tabindex="2">
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                <button type="button" class="btn btn-default volgende">Next &raquo;</button>
-                            </div>
-                            <div class="row houder-nummers">
-                                <button type="button" class="btn btn-default  btn-circle"><b>1</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>2</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>3</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>4</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>5</b></button>
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                        <div class="col-sm-offset-2 col-xs-12 col-sm-8">
+                            <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
+                        <div class="col-xs-12">
+                            <h2>Step 4</h2>
+                            <h3>Pick a date...</h3>
+                        </div>
+                        <div class="col-sm-10 col-xs-12 ui-widget marto20">
+                            <input type="text" name="where" id="email" class="form-control input-md" placeholder="Fill in a placename.." value="<?= $info[''] ?>" tabindex="2">
+                        </div>
+                        <div class="col-sm-2 col-xs-12 marto20">
+                            <button type="button" class="btn btn-default volgende">Next &raquo;</button>
+                        </div>
+                        <div class="col-sd-offset-3 col-sd-6 col-xs-12">
+                            <div class="row marto20">
+                                <nav>
+                                    <ul class="pagination">
+                                       <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li class="active"><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 hidden">
-                        <div class="vragen">
-                            <h2>Find your guide in 5 steps!</h2>
-                            <h4>Where do you want a tour?</h4>
-                            <div class="col-xs-10">
-                                <input type="text" name="where" id="email" class="form-control input-md" placeholder="Fill in a placename.." value="<?= $info[''] ?>" tabindex="2">
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                <button type="button" class="btn btn-default volgende">Next &raquo;</button>
-                            </div>
-                            <div class="row houder-nummers">
-                                <button type="button" class="btn btn-default  btn-circle"><b>1</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>2</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>3</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>4</b></button>
-                                <button type="button" class="btn btn-default  btn-circle"><b>5</b></button>
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                        <div class="col-sm-offset-2 col-xs-12 col-sm-8">
+                            <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
+                        <div class="col-xs-12">
+                            <h2>Step 5</h2>
+                            <h3>What kind of tour do you want?</h3></div>
+                        <div class="col-sm-10 col-xs-12 ui-widget marto20">
+                            <div class="col-lg-6">
+                                        <div class="input-group">
+                                          <span class="input-group-addon">
+                                            <input type="checkbox" value="">
+                                          </span>
+                                            <label for="option5" class="form-control">Museum Tour</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="input-group">
+                                          <span class="input-group-addon">
+                                            <input type="checkbox" value="">
+                                          </span>
+                                            <label for="option5" class="form-control">City Tour</label>
+                                        </div>
+                                      </div>
+                                    <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-group">
+                                          <span class="input-group-addon">
+                                            <input type="checkbox" value="">
+                                          </span>
+                                            <label for="option5" class="form-control">Pub-crawl</label>
+                                        </div>
+                                      </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-group">
+                                          <span class="input-group-addon">
+                                            <input type="checkbox" value="">
+                                          </span>
+                                            <label for="option5" class="form-control">Other</label>
+                                        </div>
+                                      </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 marto20">
+                            <button type="button" class="btn btn-default volgende">Next &raquo;</button>
+                        </div>
+                        <div class="col-sd-offset-3 col-sd-6 col-xs-12">
+                            <div class="row marto20">
+                                <nav>
+                                    <ul class="pagination">
+                                       <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li class="active"><a href="#">5</a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
