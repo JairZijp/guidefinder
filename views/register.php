@@ -107,7 +107,7 @@
                         </div>
 
                 </div>
-                <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col col-xs-12 col-sm-7 col-md-7 col-lg-7">
                     <div class="col col-xs-12">
                         <h4>Select languages</h4>
                     </div>
@@ -118,8 +118,7 @@
                                 <span class="taal-titel">Dutch</span>
                             </span>
                             <select name="NL" class="form-control selectpicker">
-                                <option selected disabled>Selecteer</option>
-                                <option value="onvoldoende">Onvoldoende (Insufficient)</option>
+                                <option selected value="onvoldoende">Onvoldoende (Insufficient)</option>
                                 <option value="matig">Matig (Moderate)</option>
                                 <option value="goed">Goed (Good)</option>
                             </select>
@@ -132,8 +131,8 @@
                                 <span class="taal-titel">English</span>
                             </span>
                             <select name="EN" class="form-control selectpicker">
-                                <option selected disabled>Select</option>
-                                <option value="onvoldoende">Insufficient</option>
+
+                                <option selected value="onvoldoende">Insufficient</option>
                                 <option value="matig">Moderate</option>
                                 <option value="goed">Good</option>
                             </select>
@@ -146,8 +145,8 @@
                                 <span class="taal-titel">German</span>
                             </span>
                             <select name="GE" class="form-control selectpicker">
-                                <option selected disabled>Selektieren</option>
-                                <option value="onvoldoende">Unzureichende (Insufficient)</option>
+
+                                <option selected value="onvoldoende">Unzureichende (Insufficient)</option>
                                 <option value="matig">Mäßigen (Moderate)</option>
                                 <option value="goed">Gut (Good)</option>
                             </select>
@@ -160,8 +159,8 @@
                                 <span class="taal-titel">France</span>
                             </span>
                             <select name="FR" class="form-control selectpicker">
-                                <option selected disabled>Sélectionner</option>
-                                <option value="onvoldoende">Insuffisant (Insufficient)</option>
+
+                                <option selected value="onvoldoende">Insuffisant (Insufficient)</option>
                                 <option value="matig">Modéré (Moderate)</option>
                                 <option value="goed">Bon (Good)</option>
                             </select>
@@ -174,8 +173,8 @@
                                 <span class="taal-titel">Spanish</span>
                             </span>
                             <select name="ES" class="form-control selectpicker">
-                                <option selected disabled>Seleccionar</option>
-                                <option value="onvoldoende">Insuficiente (Insufficient)</option>
+
+                                <option selected value="onvoldoende">Insuficiente (Insufficient)</option>
                                 <option value="matig">Moderado (Moderate)</option>
                                 <option value="goed">Buena (Good)</option>
                             </select>
@@ -188,8 +187,8 @@
                                 <span class="taal-titel">Italian</span>
                             </span>
                             <select name="IT" class="form-control selectpicker">
-                                <option selected disabled>Selezionare</option>
-                                <option value="onvoldoende">Insufficiente (Insufficient)</option>
+
+                                <option selected value="onvoldoende">Insufficiente (Insufficient)</option>
                                 <option value="matig">Moderato (Moderate)</option>
                                 <option value="goed">Buono (Good)</option>
                             </select>
@@ -202,8 +201,8 @@
                                 <span class="taal-titel">Russian</span>
                             </span>
                             <select name="RU" class="form-control selectpicker">
-                                <option selected disabled>выбрать</option>
-                                <option value="onvoldoende">недостаточное (Insufficient)</option>
+
+                                <option selected value="onvoldoende">недостаточное (Insufficient)</option>
                                 <option value="matig">умеренный (Moderate)</option>
                                 <option value="goed">плохой (Good)</option>
                             </select>
@@ -216,8 +215,8 @@
                                 <span class="taal-titel">Chinese</span>
                             </span>
                             <select name="CH" class="form-control selectpicker">
-                                <option selected disabled>選</option>
-                                <option value="onvoldoende">不足 (Insufficient)</option>
+
+                                <option selected value="onvoldoende">不足 (Insufficient)</option>
                                 <option value="matig">緩和 (Moderate)</option>
                                 <option value="goed">善 (Good)</option>
                             </select>

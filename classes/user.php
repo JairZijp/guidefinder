@@ -76,7 +76,7 @@ class User extends Password{
 
     public function getAllGuides() {
 
-        $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes" AND activeAdmin = "Yes"');
+        $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes" AND activeAdmin = "Yes" AND usertype != "admin"');
 
         $result->execute();
 
