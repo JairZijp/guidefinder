@@ -10,6 +10,7 @@ a:focus {
     text-decoration: none;
     color: #2980b9;
 }
+
 .intro {
     display: table;
     margin: -70px 0 0 0;
@@ -200,6 +201,9 @@ h1, h2, h3 {
     float: left;
     padding: 15px;
 }
+.bg-danger {
+    padding: 10px;
+}
 .lijn {
     height: 1px;
     background: #ccc;
@@ -319,36 +323,6 @@ textarea {
 .marto20 {
     margin-top: 25px;
 }
-/* ------------------------------ All Guides page -------------------------------- */
-
-.user-block {
-    margin-top: 35px;
-    padding: 20px;
-    padding-left: 25px;
-    background-color: #E9EAED;
-}
-.user-list-image {
-    border-radius: 50%;
-}
-
-/* ----------------------------- Profile pagina ---------------------------------- */
-.user-image {
-    border-radius: 50%;
-    border: 3px solid #eee;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    background: #fff;
-}
-.tour {
-    padding: 15px;
-    background: rgba(102, 102, 102, .3);
-    border-radius: 3px;
-}
-.tour-image {
-    width: 100%;
-}
-
 /*      CSS voor alle pagina's!     */
 
 .navbar {

@@ -1,129 +1,270 @@
-.bg-danger, .bg-success {
-	padding: 10px;
+.bg-danger,
+.bg-success {
+    padding: 0 5px;
 }
-.form-control {
-    margin: 5px 0;
+h4.filtertitel {
+    font-weight: bold;
 }
-
+}
 a {
-	color: #EF1F2F;
-	text-decoration: none;
+    color: #EF1F2F;
+    text-decoration: none;
 }
-
+.grijs {
+    color: #999;
+}
 .taal-vlag {
     max-width: 20px;
     margin: -3px 0 0 0;
 }
-.input-group-addon {
-    padding: 2px 6px;
+/* ------------------------------ All Guides page -------------------------------- */
+.sorteren {
+    margin: 10px 0;
 }
-.btn-block {
-	margin-top: 20px;
+.user-block {
+    margin: 5px;
+    padding: 10px 5px;
+    background-color: lightblue;
 }
+.user-list-image {
+    border-radius: 50%;
+    text-align: center;
+}
+/* --------- Gids filters ----------- */
+
+.guidefilters {
+    margin: 20px 0 0 0;
+    background: #fff;
+    padding: 15px;
+    border: 3px solid #999;
+}
+
+.slider {
+    height: 5px;
+    width: 100%;
+    background-color: #999;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+
+.scrub {
+    position: absolute;
+    cursor: pointer;
+    font-size: 60px;
+    margin-top: -38px;
+    color: #4aa3df;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.output {
+    color: #999;
+    display: inline;
+    width: 20px;
+    background: none;
+    text-align: center;
+    border: 0;
+    font-size: 16px;
+}
+#Reset {
+    margin: 10px 0;
+    
+}
+/* ----------------------------- Profile pagina ---------------------------------- */
+.user-image {
+    border-radius: 50%;
+    border: 3px solid #eee;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: #fff;
+}
+.tour {
+    padding: 15px;
+    background: rgba(102, 102, 102, .3);
+    border-radius: 3px;
+}
+.tour-image {
+    width: 100%;
+}
+sorteren {
+    width: 10%;
+}
+
 /* --------------------- Admin ----------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
 
-*{
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-}
 a:visited {
-	text-decoration: none;
+    text-decoration: none;
 }
-a{
-	text-decoration: none;
-	color: #3498db
+
+a {
+    text-decoration: none;
+    color: #3498db
 }
-hr{
-	width: 100%;
-	margin-top: 8px;
-	margin-bottom: 8px;
+
+hr {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
-.header{
-	height: 80px;
-	background-color: #333331;
-	color: #F2EDDC;
-	box-shadow: 0px 0px 10px #888888;
-	display: block;
+
+.header {
+    height: 80px;
+    background-color: #333331;
+    color: #F2EDDC;
+    box-shadow: 0px 0px 10px #888888;
+    display: block;
 }
-.header>.login{
-	float: right;
-	line-height: 45px;
-	padding: 15px 30px;
-	font-size: 24px;
-	font-weight: bolder;
+
+.header>.login {
+    float: right;
+    line-height: 45px;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bolder;
 }
-.header>.login>a{
-	text-decoration: none;
-	color: #F2EDDC;
+
+.header>.login>a {
+    text-decoration: none;
+    color: #F2EDDC;
 }
-.header>.login>a:hover{
-	color: #DED8B6;
+
+.header>.login>a:hover {
+    color: #DED8B6;
 }
-.loginform{
-	padding-bottom: 0
+
+.loginform {
+    padding-bottom: 0
 }
-.header>.welcome{
-	float: left;
-	line-height: 40px;
-	padding: 20px 30px;
-	font-size: 24px;
-	font-weight: bolder;
+
+.header>.welcome {
+    float: left;
+    line-height: 40px;
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: bolder;
 }
-.loginform>div>input{
-	height:;
+
+.loginform>div>input {
+    height: ;
 }
-.navigation{
-	width: 100%;
-	margin: 15px auto;
-	text-align: center;
+
+.navigation {
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
 }
-.navigation>ul{
-	list-style-type: none;
-	padding-left:auto;
+
+.navigation>ul {
+    list-style-type: none;
+    padding-left: auto;
 }
-.navigation>ul>li{
-	display: inline;
-	margin: 20px;
-	font-size: 20px;
-	font-weight: bolder;
+
+.navigation>ul>li {
+    display: inline;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 #message {
-	resize: none;
-	height: 132px;
-
+    resize: none;
+    height: 132px;
 }
+
 footer {
-	width: 100%;
-	background-color: #424242;
-	color: white;
+    width: 100%;
+    background-color: #424242;
+    color: white;
 }
 
-.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
-.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
-.tftable tr {background-color:#ffffff;}
-.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
-.tftable tr:hover {background-color:#ffff99;}
-
-.login-form{
-	margin: 0 auto;
-	width: 400px;
-	margin-top: 100px;
-
+.tftable {
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+    border-width: 1px;
+    border-color: #729ea5;
+    border-collapse: collapse;
 }
+
+.tftable th {
+    font-size: 12px;
+    background-color: #acc8cc;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    text-align: left;
+}
+
+.tftable tr {
+    background-color: #ffffff;
+}
+
+.tftable td {
+    font-size: 12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+}
+
+.tftable tr:hover {
+    background-color: #ffff99;
+}
+
+.login-form {
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 100px;
+}
+
 .login-form h2 {
-	text-align: center;
+    text-align: center;
 }
 
-.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
-.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
-.tftable tr {background-color:#ffffff;}
-.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
-.tftable tr:hover {background-color:#ffff99;}
+.tftable {
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+    border-width: 1px;
+    border-color: #729ea5;
+    border-collapse: collapse;
+}
+
+.tftable th {
+    font-size: 12px;
+    background-color: #acc8cc;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+    text-align: left;
+}
+
+.tftable tr {
+    background-color: #ffffff;
+}
+
+.tftable td {
+    font-size: 12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #729ea5;
+}
+
+.tftable tr:hover {
+    background-color: #ffff99;
+}
 
 .form-bottom {
-	margin-top: 75px;
+    margin-top: 75px;
 }
