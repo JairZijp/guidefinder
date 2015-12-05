@@ -36,10 +36,10 @@
     </div>
     <div class="col-xs-12 col-sm-3">
         <div class="guidefilters">
-            <h3>Filters:</h3>
+            <h3 class="filtertitel">Filters:</h3>
             <hr>
             <div class="checkbox">
-                <h4 class="filtertitel">Distance</h4>
+                <h4 class="filtertype">Distance</h4>
                 <h6 class="grijs">scroll to the right to set your distance</h6>
                 <ul class="list-group">
                     <div class="slider">
@@ -51,7 +51,7 @@
             </div>
             <hr>
             <div class="checkbox">
-                <h4 class="filtertitel">Kind of tour</h4>
+                <h4 class="filtertype">Kind of tour</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <label>
@@ -102,7 +102,7 @@
             </div>
             <hr>
             <div class="checkbox">
-                <h4 class="filtertitel">Languages</h4>
+                <h4 class="filtertype">Languages</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <label>
@@ -134,7 +134,7 @@
             </div>
             <hr>
             <div class="checkbox">
-                <h4 class="filtertitel">Type of people</h4>
+                <h4 class="filtertype">Type of people</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <label>
@@ -164,7 +164,9 @@
     </div>
     <div class="col-xs-12 col-sm-9">
         <div class="col-xs-12 sorteren">
-            <div class="col-xs-2"><label for="sort">Sort on:</label></div>
+            <div class="col-xs-2">
+                <label for="sort">Sort on:</label>
+            </div>
             <div class="col-xs-3">
                 <select class="form-control pull-left">
                     <option>Date</option>
@@ -179,27 +181,42 @@
 
         foreach($allGuides as $info) {
         ?>
-                <div class="user-block col-md-3">
-                    <div class="col-md-3">
-                        <img class="user-list-image" height="150" width="150" src="images/profile/<?= $info['image']; ?>">
-                    </div>
-                    <div class="col-md-10">
-                        <h3 class="center"><?= $info['username']; ?></h3>
-                        <p class="center">
-                        <img src="images/vlaggen/United-Kingdom.png" class="taal-vlag-profiel" alt="English" title="English"/>
-                        <img src="images/vlaggen/Netherlands.png" class="taal-vlag-profiel" alt="Dutch" title="Dutch"/>
-                        <img src="images/vlaggen/Germany.png" class="taal-vlag-profiel" alt="German" title="German"/>
-                        </p>
-                        <hr>
-                        <p>Name: <?= $info['firstname']; ?> <?= $info['lastname']; ?></p>
-                        <p>Location: <b><?= $info['city'];?></b></p>
-                        <p>About:
-                            <?= $info ['description']; ?>
-                        </p>
-                        <p><code><?= $info['email']; ?></code></p>
-                        <p><button class="btn-primary">Show profile</button><button class="btn-warning">Contact guide!</button></p>
-                    </div>
+            <div class="user-block col-md-3">
+                <div class="col-md-3">
+                    <img class="user-list-image" height="150" width="150" src="images/profile/<?= $info['image']; ?>">
                 </div>
+                <div class="col-md-12">
+                    <h3 class="center"><?= $info['username']; ?></h3>
+                    <p class="center">
+                        <img src="images/vlaggen/United-Kingdom.png" class="taal-vlag-profiel" alt="English" title="English" />
+                        <img src="images/vlaggen/Netherlands.png" class="taal-vlag-profiel" alt="Dutch" title="Dutch" />
+                        <img src="images/vlaggen/Germany.png" class="taal-vlag-profiel" alt="German" title="German" />
+                    </p>
+                    <hr>
+                    <p class="nomar">
+                        <label for="name" class="nobold">Name:</label>
+                        <?= $info['firstname']; ?>
+                            <?= $info['lastname']; ?>
+                    </p>
+                    <p class="nomar">
+                        <label for="location" class="nobold">Location:</label> <b><?= $info['city'];?></b></p>
+                    <p class="nomar">
+<!--
+                        <label for="about" class="nobold">About:</label>
+                        <?= $info ['description']; ?>
+-->
+                    </p>
+                    <p class="nomar">
+                        <label for="email" class="nobold">Email:</label> <code title="Click on: 'Contact guide!' te get his email">Hidden</code>
+                        <!--                    <code><?= $info['email']; ?></code>-->
+                    </p>
+                    <hr>
+                    <p class="guidebuttons">
+                        <button class="btn-primary guidebutton">Show profile</button>
+                        <button class="btn-warning guidebutton">Contact guide!</button>
+                    </p>
+                </div>
+            </div>
             <?php
         }
         ?>
