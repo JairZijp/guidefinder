@@ -127,7 +127,7 @@ a:focus {
     }
 }
 .btn {
-    border-radius: 0;
+    border-radius: 3;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all 100ms ease-in-out;
@@ -169,19 +169,6 @@ body {
     background-color: #fff;
     color: #333;
 }
-html {
-    width: 100%;
-    height: 100%;
-}
-h1, h2, h3 {
-    font-weight: 600;
-}
-.nobor {
-    border: 0;
-}
-.grey {
-    color: #999;
-}
 .stap {
     width: 50px;
     height: 50px;
@@ -214,13 +201,16 @@ h1, h2, h3 {
     border-radius: 3px;
 }
 .btn-primary {
-    background: #2980b9;
+    background: #4aa3df;
+    border: 0;
 }
 .gidscontainer {
     height: auto;
-    border-left: 1px solid #2980b9;
-    border-bottom: 1px solid #2980b9;
-    border-right: 1px solid #2980b9;
+    border-left: 1px solid #4aa3df;
+    border-bottom: 1px solid #4aa3df;
+    border-right: 1px solid #4aa3df;
+    padding: 15px;
+    overflow: hidden;
 }
 .gidspagina-actief, .gidspagina-actief:focus {
     color: #333;
@@ -240,10 +230,10 @@ h1, h2, h3 {
     -moz-transition: 100ms ease-in-out 100ms;
     -o-transition: 100ms ease-in-out 100ms;
     transition: 100ms ease-in-out 100ms;
-    color: #2980b9;
+    color: #4aa3df;
 }
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    background: #2980b9;
+    background: #4aa3df;
 }
 .taal-titel {
     padding: 0 0 0 10px;
@@ -284,18 +274,19 @@ h2.titel {
     margin-bottom: 20px;
 }
 .stap-actief {
-    background-color: #2980b9;
+    background-color: #4aa3df;
 }
 .actief {
-    border-left: 1px solid #2980b9;
-    border-right: 1px solid #2980b9;
-    border-top: 1px solid #2980b9;
+    border-left: 1px solid #4aa3df;
+    border-right: 1px solid #4aa3df;
+    border-top: 1px solid #4aa3df;
 }
 .border {
-    border-bottom: 1px solid #2980b9;
+    border-bottom: 1px solid #4aa3df;
 }
 .center {
     text-align: center;
+    margin: 10px 0;
 }
 textarea {
     resize: none;

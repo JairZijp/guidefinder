@@ -1,3 +1,13 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+h1, h2, h3 {
+    font-weight: 600;
+}
+.nobor {
+    border: 0;
+}
 .bg-danger,
 .bg-success {
     padding: 0 5px;
@@ -8,7 +18,10 @@
 .nobold {
     font-weight: normal;
 }
-.grijs {
+.bold {
+    font-weight: 600;
+}
+.grijs, .grey {
     color: #999;
 }
 .taal-vlag {
@@ -22,13 +35,12 @@
 .user-block {
     margin: 10px;
     padding: 15px 0px;
-    background-color: #fff;
     border: 2px solid #4aa3df;
     border-radius: 3px;
 }
 .user-list-image {
     border-radius: 50%;
-    border: 2px solid #ddd;
+    border: 2px solid #4aa3df;
     text-align: center;
 }
 .guidebuttons {
