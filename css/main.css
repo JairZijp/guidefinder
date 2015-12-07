@@ -2,50 +2,68 @@ html {
     width: 100%;
     height: 100%;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-weight: 600;
 }
+
 .nobor {
     border: 0;
 }
+
 .bg-danger,
 .bg-success {
     padding: 0 5px;
 }
+
 .nomar {
     margin: 0;
 }
+
 .nobold {
     font-weight: normal;
 }
+
 .bold {
     font-weight: 600;
 }
-.grijs, .grey {
+
+.grijs,
+.grey {
     color: #999;
 }
+
 .taal-vlag {
     max-width: 20px;
     margin: -3px 0 0 0;
 }
+
+
 /* ------------------------------ All Guides page -------------------------------- */
+
 .sorteren {
     margin: 35px 0 5px 0;
 }
+
 .user-block {
     margin: 10px;
     padding: 15px 0px;
     border: 2px solid #4aa3df;
     border-radius: 3px;
 }
+
 .user-list-image {
     border-radius: 50%;
     border: 2px solid #4aa3df;
     text-align: center;
 }
+
 .guidebuttons {
     text-align: center;
 }
+
 button.guidebutton {
     padding: 5px 10px;
     margin: 5px 0 0 0;
@@ -53,6 +71,8 @@ button.guidebutton {
     border-radius: 3px;
     text-align: center;
 }
+
+
 /* --------- Gids filters ----------- */
 
 .guidefilters {
@@ -61,12 +81,15 @@ button.guidebutton {
     padding: 15px;
     border: 3px solid #ddd;
 }
+
 h3.filtertitel {
     font-weight: bold;
 }
+
 h4.filtertype {
     font-weight: bold;
 }
+
 .slider {
     height: 5px;
     width: 100%;
@@ -94,11 +117,14 @@ h4.filtertype {
     border: 0;
     font-size: 16px;
 }
+
 #Reset {
     margin: 10px 0;
-    
 }
+
+
 /* ----------------------------- Profile pagina ---------------------------------- */
+
 .user-image {
     border-radius: 50%;
     border: 3px solid #eee;
@@ -107,17 +133,49 @@ h4.filtertype {
     padding: 10px;
     background: #fff;
 }
+
 .tour {
     padding: 15px;
     background: rgba(102, 102, 102, .3);
     border-radius: 3px;
 }
+
 .tour-image {
     width: 100%;
 }
+
 sorteren {
     width: 10%;
 }
+
+
+/* --------------------- Reviews ----------------------- */
+.review {
+    border: 3px solid #eee;
+    border-radius: 3px;
+    padding: 10px;
+}
+.footer-review {
+    padding: 10px 10px 0 10px;
+}
+.panel {
+    margin: 0;
+}
+.panel-body {
+    border: 0;
+    padding: 10px;
+}
+.media {
+    /*box-shadow:0px 0px 4px -2px #000;*/
+    margin: 0;
+}
+
+.dp {
+    border: 3px solid #eee;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /* --------------------- Admin ----------------------- */
 

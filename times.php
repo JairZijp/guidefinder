@@ -21,7 +21,7 @@ require('layout/header.php');
 
 				foreach($userInfo as $info) {
 					?>
-                    <h3>Edit Profile</h3>
+                    <h3>Edit Times</h3>
                     <?php
 
 // This function will take $_SERVER['REQUEST_URI'] and build a breadcrumb based on the user's current path
@@ -63,11 +63,11 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
                         <div class=" col-xs-3 pad0 border">
                             <a href="edit.php" class="gidspagina"><h3 class="center titel"><i class="fa fa-user" title="Personal"></i><br><span class="hidden-xs">Personal</span></h3></a></div>
                         <div class=" col-xs-3 pad0 border">
-                            <a href="#" class="gidspagina"><h3 class="center titel"><i class="fa fa-map-marker" title="Locations"></i><br><span class="hidden-xs">Locations</span></h3></a></div>
+                            <a href="locations.php" class="gidspagina"><h3 class="center titel"><i class="fa fa-map-marker" title="Locations"></i><br><span class="hidden-xs">Locations</span></h3></a></div>
                         <div class=" col-xs-3 pad0 actief">
-                            <a href="#" class="gidspagina-actief"><h3 class="center titel"><i class="fa fa-clock-o" title="Date &amp; Time"></i><br><span class="hidden-xs">Times</span></h3></a></div>
+                            <a href="times.php" class="gidspagina-actief"><h3 class="center titel"><i class="fa fa-clock-o" title="Date &amp; Time"></i><br><span class="hidden-xs">Times</span></h3></a></div>
                         <div class=" col-xs-3 pad0 border">
-                            <a href="#" class="gidspagina"><h3 class="center titel"><i class="fa fa-thumbs-o-up" title="Reviews"></i><br><span class="hidden-xs">Reviews</span></h3></a></div>
+                            <a href="reviews.php" class="gidspagina"><h3 class="center titel"><i class="fa fa-thumbs-o-up" title="Reviews"></i><br><span class="hidden-xs">Reviews</span></h3></a></div>
                         <div class="col col-xs-12 gidscontainer">
                             <div class="row">
                             </div>
@@ -127,6 +127,134 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
 				?>
                                 <div class="col-xs-12">
                                     <div class="row">
+                                      <h3>Please set your times</h3>
+                                      <p>Please set your weekly times, so customers can see at what day and time you are available</p>
+                                      <hr>
+                                       <div class="col-xs-12"><label class="checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Set this week for all weeks
+                                        </label></div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <table class="table table-striped custab">
+                                                <h3><?php
+$ddate = "2015-12-07";
+$duedt = explode("-", $ddate);
+$date  = mktime(0, 0, 0, $duedt[1], $duedt[2], $duedt[0]);
+$week  = (int)date('W', $date);
+echo "Weeknummer: " . $week;
+?></h3>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>From:</th>
+                                                        <th>Till:</th>
+                                                        <th class="text-center">Set times</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>Monday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tuesday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wednesday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thursday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Friday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sunday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <table class="table table-striped custab">
+                                                <h3><?php
+$ddate = "2015-12-14";
+$duedt = explode("-", $ddate);
+$date  = mktime(0, 0, 0, $duedt[1], $duedt[2], $duedt[0]);
+$week  = (int)date('W', $date);
+echo "Weeknummer: " . $week;
+?></h3>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Day</th>
+                                                        <th>From:</th>
+                                                        <th>Till:</th>
+                                                        <th class="text-center">Set times</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>Monday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tuesday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wednesday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thursday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Friday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sunday</td>
+                                                    <td>12:00</td>
+                                                    <td>12:00</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                         <div class="col-xs-12 text-right">
                                             <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">
                                         </div>
@@ -136,10 +264,10 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
             </div>
 
 
-            </div>
         </div>
+    </div>
 
-        <?php
+    <?php
 //include header template
 require('layout/footer.php');
 ?>

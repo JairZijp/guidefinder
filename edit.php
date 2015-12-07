@@ -64,11 +64,11 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
                         <div class=" col-xs-3 pad0 actief">
                             <a href="edit.php" class="gidspagina-actief"><h3 class="center titel"><i class="fa fa-user" title="Personal"></i><br><span class="hidden-xs">Personal</span></h3></a></div>
                         <div class=" col-xs-3 pad0 border">
-                            <a href="#" class="gidspagina"><h3 class="center titel"><i class="fa fa-map-marker" title="Locations"></i><br><span class="hidden-xs">Locations</span></h3></a></div>
+                            <a href="locations.php" class="gidspagina"><h3 class="center titel"><i class="fa fa-map-marker" title="Locations"></i><br><span class="hidden-xs">Locations</span></h3></a></div>
                         <div class=" col-xs-3 pad0 border">
                             <a href="times.php" class="gidspagina"><h3 class="center titel"><i class="fa fa-clock-o" title="Date &amp; Time"></i><br><span class="hidden-xs">Times</span></h3></a></div>
                         <div class=" col-xs-3 pad0 border">
-                            <a href="#" class="gidspagina"><h3 class="center titel"><i class="fa fa-thumbs-o-up" title="Reviews"></i><br><span class="hidden-xs">Reviews</span></h3></a></div>
+                            <a href="reviews.php" class="gidspagina"><h3 class="center titel"><i class="fa fa-thumbs-o-up" title="Reviews"></i><br><span class="hidden-xs">Reviews</span></h3></a></div>
                         <div class="col col-xs-12 gidscontainer">
                             <form method="post" enctype="multipart/form-data">
                                 <div class="col-md-6">
