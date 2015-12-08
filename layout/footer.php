@@ -19,7 +19,7 @@
             <li><a href="#">All Tours</a></li>
         </p>
 
-        <p>Copyright © <?php echo date("Y"); ?> · Alle rechten voorbehouden · <a href="http://www.guidefinder.amsterdam">GuideFinder</a></p>
+        <p>Copyright © <?php echo date("Y"); ?> · All rights reserved · <a href="http://www.guidefinder.amsterdam">GuideFinder</a></p>
     </div>
 
 </footer>

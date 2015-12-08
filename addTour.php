@@ -4,7 +4,7 @@
 if(!$user->is_logged_in()){ header('Location: index.php?page=login'); }
 
 //define page title
-$title = 'Add Tour';
+$title = 'Add Tour | GuideFinder';
 
 //include header template
 require('layout/header.php');
@@ -21,24 +21,76 @@ require('layout/header.php');
             		foreach($userInfo as $info) {
             		?>
                     <h2>Add Tour</h2>
+                    <p>On this page you can add tours. These tours will be displayed on your profile page and on the 'All Tours' page. Please select your price for each person for the tour, for how many persons the tour is, and for whom the tour is suitable.</p>
                     <hr>
                     <form method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <p><b>Title</b>
-                                <input type="text" name="name" class="form-control input-md" placeholder="Title">
+                                <input type="text" name="name" class="form-control input-md" placeholder="Type a title for your tour">
                             </p>
                         </div>
                         <div class="form-group">
-                            <p><b>Price p.p</b>
-                                <input type="number" class="form-control input-md" name="price" placeholder="Price">
+                            <p><b>Price p.p.</b>
+                                <input type="number" class="form-control input-md" name="price" placeholder="Set your price for each person">
                             </p>
                         </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                            <label for="sel1">Minimal number of persons:</label>
+                            <select class="form-control" id="sel1">
+                                <option disabled selected>Not set</option>
+                                <option>1 person</option>
+                                <option>2 persons</option>
+                                <option>3 persons</option>
+                                <option>4 persons</option>
+                                <option>5 persons</option>
+                                <option>6 persons</option>
+                                <option>7 persons</option>
+                                <option>8 persons</option>
+                                <option>9 persons</option>
+                                <option>10 persons</option>
+                                <option disabled>We do not recomment a higher number</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                            <label for="sel1">Maximal number of persons:</label>
+                            <select class="form-control" id="sel1">
+                                <option disabled selected>Please select</option>
+                                <option>1 person</option>
+                                <option>2 persons</option>
+                                <option>3 persons</option>
+                                <option>4 persons</option>
+                                <option>5 persons</option>
+                                <option>6 persons</option>
+                                <option>7 persons</option>
+                                <option>8 persons</option>
+                                <option>9 persons</option>
+                                <option>10 persons</option>
+                                <option>11 persons</option>
+                                <option>12 persons</option>
+                                <option>13 persons</option>
+                                <option>14 persons</option>
+                                <option>15 persons</option>
+                                <option>16 persons</option>
+                                <option>17 persons</option>
+                                <option>18 persons</option>
+                                <option>19 persons</option>
+                                <option>20 persons</option>
+                                <option disabled>We do not recomment a higher number</option>
+                            </select>
+                        </div>
+                        </div>
                         <b>Image<b><br>
+                        <small class="grey">Select a image for your tour (recommented)</small>
 
 				<input class="btn" type="file" id="image" name="image"></p>
 
 
-            	<p>Description: <textarea type="text" class="form-control input-md" name="description" placeholder="Description"></textarea></p>
+            	<p>Description: <textarea type="text" class="form-control input-md" name="description" placeholder="Type a description for the tour..."></textarea></p>
+               
+<!--
                 <div class="form-group">
                 Monday:
                 <input type="time" name="monday">
@@ -74,12 +126,20 @@ require('layout/header.php');
                 <input type="time" name="sunday">
                 <input type="time" name="sunday2">
             </div>
-
+-->
+            <div class="row">
+            <div class="col-md-2">
             <div class="form-group">
-                <p>Adults: <input type="checkbox" name="adults" value="Yes"></p>
-                <p>Aged: <input type="checkbox" name="aged" value="Yes"></p>
-                <p>Children: <input type="checkbox" name="children" value="Yes"></p>
-                <p>Disabled: <input type="checkbox" name="disabled" value="Yes"></p>
+                <p><input type="checkbox" name="adults" value="Yes"> <label for="adults">Adults</label></p>
+                <p><input type="checkbox" name="aged" value="Yes"> <label for="aged">Aged</label></p>
+            </div>
+            </div>
+            <div class="col-md-2">
+            <div class="form-group">
+                <p><input type="checkbox" name="children" value="Yes"> <label for="children">Children</label></p>
+                <p><input type="checkbox" name="disabled" value="Yes"> <label for="disabled">Disabled</label></p>
+                </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Add Tour" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>

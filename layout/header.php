@@ -127,7 +127,7 @@
                                         <div class="row">
                                             <div class="col-lg-4">
                                                 <p class="text-center">
-                                                    <img height="90" width="90" src="images/profile/<?= $info['image']; ?>">
+                                                    <a href="memberpage.php"><img height="90" width="90" src="images/profile/<?= $info['image']; ?>"></a>
                                                 </p>
                                             </div>
                                             <div class="col-lg-8">
