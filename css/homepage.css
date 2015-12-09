@@ -312,7 +312,11 @@ textarea {
     border: none;
 }
 .marto20 {
-    margin-top: 25px;
+    margin-top: 20px;
+}
+.invullen {
+    margin: 0;
+    padding: 10px;
 }
 /*      CSS voor alle pagina's!     */
 

@@ -60,7 +60,7 @@
         navigator.geolocation.getCurrentPosition(GoogleMap, showAmsterdam);
     }
 </script>
-
+<script src="js/home.js"></script>
 <header class="intro">
     <div class="intro-body">
         <div class="blauw">
@@ -83,12 +83,17 @@
                             <button id="here">Here!</button>
                         </a>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen">
+                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag1">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
                             <h2>Step 1</h2>
-                            <h3>Where do you want a tour?</h3></div>
+                            <h3>Where do you want a tour?</h3>
+                            <div class="alert alert-danger invullen hidden" role="alert">
+                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                <span class="sr-only">Error:</span> Please fill in a placename
+                            </div>
+                        </div>
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
                             <input type="text" name="where" class="form-control input-md" placeholder="Fill in a placename.." id="tags" value="" tabindex="2">
                         </div>
@@ -114,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag2">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -173,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag3">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -236,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag4">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -273,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden">
+                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag5">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
