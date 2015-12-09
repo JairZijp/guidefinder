@@ -8,7 +8,7 @@ date_default_timezone_set('Europe/London');
 //database credentials
 define('DBHOST','localhost');
 define('DBUSER','root');
-define('DBPASS','root');
+define('DBPASS','admin');
 define('DBNAME','tester');
 
 //application address

@@ -250,6 +250,13 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-12 text-right">
+                                            <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
 
                             <?php
@@ -305,13 +312,7 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
 				}
 			}
 				?>
-                                <div class="col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-12 text-right">
-                                            <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">
-                                        </div>
-                                    </div>
-                                </div>
+
                         </div>
             </div>
 

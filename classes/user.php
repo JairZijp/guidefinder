@@ -110,6 +110,24 @@ class User extends Password{
 
         return $statement;
     }
+
+    public function updateTimes($username,$monday,$tuesday,$wednesday,$thursday,$friday,$saturday,$sunday) {
+            $result = $this->_db->prepare('UPDATE members SET monday = :monday,tuesday = :tuesday,wednesday = :wednesday,thursday = :thursday,friday = :friday,saturday = :saturday,sunday = :sunday WHERE username = :username');
+
+            $result->execute(array(
+                ":username" => $username,
+                ":monday" => $monday,
+                ":tuesday" => $tuesday,
+                ":wednesday" => $wednesday,
+                ":thursday" => $thursday,
+                ":friday" => $friday,
+                ":saturday" => $saturday,
+                ":sunday" => $sunday
+            ));
+
+            return $result;
+
+        }
     public function getAllGuidesAdmin(){
         $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes"');
 
