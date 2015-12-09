@@ -63,7 +63,7 @@
 <script src="js/home.js"></script>
 <header class="intro">
     <div class="intro-body">
-        <div class="blauw">
+        <div class="blauw flex">
             <div class="col-md-8">
                 <div class="row">
                     <h1 class="brand-heading">GuideFinder</h1>
@@ -73,7 +73,7 @@
         </div>
         <figure id="pijltje"></figure>
         <div id="maps"></div>
-        <div id="vragenbox">
+        <div id="vragenbox" class="flex">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 zoeken hidden">
@@ -347,7 +347,7 @@
 </header>
 
 <!-- About Section -->
-<section id="about" class="container content-section text-center">
+<section id="howitworks" class="container content-section text-center flex">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <h2>How does it work?</h2>
@@ -365,26 +365,51 @@
 </section>
 
 <!-- Download Section -->
-<section id="download" class="content-section text-center">
-    <div class="download-section">
-        <div class="container">
-            <div class="col-lg-12">
-                <h2>GuideFinder?</h2>
-                <div class="col col-sm-4 col-xs-12">
-                    <h3>Who?</h3>
-                    <hr>
-                    <p>GuideFinder is a system that connects tourist to guide's (GuideFinder's). Today, everbody could be a 'GuideFinder' do you have experience in guideing? Join us!</p>
-                </div>
-                <div class="col col-sm-4 col-xs-12">
-                    <h3>What?</h3>
-                    <hr>
-                    <p>I've got a lot of experience in giving tourist and visitors tours in Amsterdam. I was surprised that tourists could not quickly find a guide. That why i started GuideFinder.</p>
-                </div>
-                <div class="col col-sm-4 col-xs-12">
-                    <h3>Where?</h3>
-                    <hr>
-                    <p>GuideFinder's could be everywhere, every city and all populair places. If you are searching for a GuideFinder you'll have to choose where you want a tour. Our filters will figure out witch GuideFinder is best for you!</p>
-                </div>
+<section id="about" class="content-section text-center flex">
+    <div class="container">
+        <div class="col-lg-12">
+            <h2>GuideFinder?</h2>
+            <div class="col col-sm-4 col-xs-12">
+                <h3>Who?</h3>
+                <hr>
+                <p>GuideFinder is a system that connects tourist to guide's (GuideFinder's). Today, everbody could be a 'GuideFinder' do you have experience in guideing? Join us!</p>
+            </div>
+            <div class="col col-sm-4 col-xs-12">
+                <h3>What?</h3>
+                <hr>
+                <p>I've got a lot of experience in giving tourist and visitors tours in Amsterdam. I was surprised that tourists could not quickly find a guide. That why i started GuideFinder.</p>
+            </div>
+            <div class="col col-sm-4 col-xs-12">
+                <h3>Where?</h3>
+                <hr>
+                <p>GuideFinder's could be everywhere, every city and all populair places. If you are searching for a GuideFinder you'll have to choose where you want a tour. Our filters will figure out witch GuideFinder is best for you!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="home-reviews" class="flex">
+    <div class="container">
+        <div class="col-xs-12">
+           <h2 class="center">What people say about us...</h2>
+          <div class="col-xs-3">
+            <div class="talkcloud flex">
+                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+            </div>
+            </div>
+            <div class="col-xs-3">
+            <div class="talkcloud flex">
+                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+            </div>
+            </div>
+            <div class="col-xs-3">
+            <div class="talkcloud flex">
+                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+            </div>
+            </div>
+            <div class="col-xs-3">
+            <div class="talkcloud flex">
+                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+            </div>
             </div>
         </div>
     </div>

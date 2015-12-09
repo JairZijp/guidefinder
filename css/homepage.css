@@ -1,3 +1,11 @@
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+}
+
 a {
     color: #4aa3df;
     -webkit-transition: all 100ms ease-in-out;
@@ -23,6 +31,7 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
+
 .intro .intro-body {
     display: table-cell;
 }
@@ -32,22 +41,22 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
+
 .content-section {
-        padding-top: 20px;
-    }
+    padding-top: 20px;
+}
+
 @media(min-width:768px) {
     .intro {
         height: 100%;
         padding: 0;
     }
-
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
-
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
@@ -57,7 +66,7 @@ a:focus {
 .btn-circle:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
 }
 
 @-webkit-keyframes pulse {
@@ -65,12 +74,10 @@ a:focus {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -82,28 +89,28 @@ a:focus {
         -moz-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -moz-transform: scale(1.2);
         transform: scale(1.2);
     }
-
     100% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
 }
 
-.download-section {
+section#about {
     width: 100%;
-    padding: 50px 0;
+    height: 50%;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-color: #4aa3df;
+}
+
+section#howitworks {
+    width: 100%;
+    height: 50%;
+    color: #333;
+    background-image: url(../images/homepage/bg.png);
 }
 
 #map {
@@ -112,28 +119,15 @@ a:focus {
     margin-top: 100px;
 }
 
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 50px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
 .btn {
     border-radius: 3;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
     transition: all 100ms ease-in-out;
 }
+
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -150,16 +144,15 @@ ul.banner-social-buttons {
         margin-bottom: 20px;
         padding: 0;
     }
-
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
 }
 
+
 /*         Eigen CSS        */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
-
 body {
     width: 100%;
     height: 100%;
@@ -169,6 +162,7 @@ body {
     background-color: #fff;
     color: #333;
 }
+
 .stap {
     width: 50px;
     height: 50px;
@@ -184,13 +178,16 @@ body {
     -moz-border-radius: 100%;
     border-radius: 100%;
 }
+
 .stap-text {
     float: left;
     padding: 15px;
 }
+
 .bg-danger {
     padding: 10px;
 }
+
 .lijn {
     height: 1px;
     background: #ccc;
@@ -200,10 +197,12 @@ body {
     -o-border-radius: 3px;
     border-radius: 3px;
 }
+
 .btn-primary {
     background: #4aa3df;
     border: 0;
 }
+
 .gidscontainer {
     height: auto;
     border-left: 1px solid #4aa3df;
@@ -212,18 +211,24 @@ body {
     padding: 15px;
     overflow: hidden;
 }
-.gidspagina-actief, .gidspagina-actief:focus {
+
+.gidspagina-actief,
+.gidspagina-actief:focus {
     color: #333;
     text-decoration: none;
 }
+
 .gidspagina-actief:hover {
     text-decoration: none;
     color: #333;
 }
-.gidspagina, .gidspagina:focus {
+
+.gidspagina,
+.gidspagina:focus {
     color: #999;
     text-decoration: none;
 }
+
 .gidspagina:hover {
     text-decoration: none;
     -webkit-transition: 100ms ease-in-out 100ms;
@@ -232,77 +237,100 @@ body {
     transition: 100ms ease-in-out 100ms;
     color: #4aa3df;
 }
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
     background: #4aa3df;
 }
+
 .taal-titel {
     padding: 0 0 0 10px;
 }
+
 .taal-vlag {
     max-width: 20px;
     margin: -3px 0 0 0;
 }
+
 .taal-vlag-profiel {
     max-width: 20px;
     margin: 3px 5px 0 0;
 }
+
 ol.breadcrumb {
-    margin:0;
+    margin: 0;
     padding: 20px 0 0 0;
     background: none;
 }
+
 div.taal-houder {
     margin: 20px 0;
 }
+
 div.taal {
     margin: 8px 0 0 0;
 }
+
 h2.titel {
     margin: 0;
     padding: 10px;
 }
+
 .pad0 {
     padding: 0;
 }
+
 .topbottom20 {
     margin: 20px 0;
 }
+
 .top20 {
     margin-top: 20px;
 }
+
 .bottom20 {
     margin-bottom: 20px;
 }
+
 .stap-actief {
     background-color: #4aa3df;
 }
+
 .actief {
     border-left: 1px solid #4aa3df;
     border-right: 1px solid #4aa3df;
     border-top: 1px solid #4aa3df;
 }
+
 .border {
     border-bottom: 1px solid #4aa3df;
 }
+
 .center {
     text-align: center;
     margin: 10px 0;
 }
+
 textarea {
     resize: none;
     width: 100%;
     font-weight: 400;
 }
+
 .vragen {
     position: relative;
     padding: 30px;
-    background: rgba(255,165,0,1);
+    background: rgba(255, 165, 0, 1);
     height: auto;
     border-radius: 3px;
     border-bottom: 2px solid #e67e22;
     z-index: 3;
-
 }
+
 .volgende {
     width: 100%;
     -webkit-border-radius: 3px;
@@ -311,13 +339,17 @@ textarea {
     color: #fff;
     border: none;
 }
+
 .marto20 {
     margin-top: 20px;
 }
+
 .invullen {
     margin: 0;
     padding: 10px;
 }
+
+
 /*      CSS voor alle pagina's!     */
 
 .navbar {
@@ -326,19 +358,26 @@ textarea {
     background-color: #4aa3df;
     border: 0;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-weight: 600;
 }
+
 #navbar-main > ul > li > a {
     color: #fff;
 }
+
 #navbar-main > ul > li.active a {
-     background: #2980b9;
+    background: #2980b9;
 }
+
 .navbar-brand {
     padding: 0;
     margin: 0 20px 0 0;
 }
+
 .navbar-login {
     width: 305px;
     padding: 10px;
@@ -354,42 +393,38 @@ h1, h2, h3 {
 .icon-size {
     font-size: 87px;
 }
+
 .blauw {
     height: 40%;
     width: 100%;
     background: #4aa3df;
     position: relative;
     text-align: center;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    vertical-align: middle;
     top: 0;
 }
+
 #pijltje {
     margin: 0 auto;
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 25px solid #4aa3df;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #4aa3df;
     position: relative;
     z-index: 3;
 }
+
 .intro .intro-body .brand-heading {
     font-size: 65px;
     color: #fff;
 }
-h2.intro-text {
-    font-size: 35px;
-    color: #fff;
-}
+
 .fa-search:before {
     content: "\f002";
     color: #666;
     font-size: 6em;
 }
+
 #maps {
     margin: -25px 0 0 0;
     width: 100%;
@@ -398,35 +433,34 @@ h2.intro-text {
     position: absolute;
     z-index: 0;
 }
+
 #vragenbox {
     margin: -25px 0 0 0;
     background: none;
     width: 100%;
     min-height: 60%;
     height: auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    vertical-align: middle;
     z-index: 1;
 }
-.zoeken {
-}
+
+.zoeken {}
+
 #vind {
     color: #666;
     text-transform: none;
     margin: 20px 0;
 }
+
 h2.vindbox {
     width: auto;
     padding: 20px 10px;
     background: orange;
     margin-top: -50px;
     -webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
-    -moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.3);
-    box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.3);
 }
+
 button#here {
     background-color: #f39c12;
     border: none;
@@ -437,13 +471,16 @@ button#here {
     border-bottom: 2px solid #e67e22;
     color: #fff;
 }
+
 button#here:hover {
     background-color: #f3af12;
     transition: all ease-in-out 100ms;
 }
+
 #page-top > header > div > div.maps > div > div > div > a {
     color: #fff;
 }
+
 span.nummer {
     padding: 5px 12px;
     background: #666;
@@ -453,88 +490,135 @@ span.nummer {
     border-radius: 3px;
     float: left;
 }
+
 h4.titel {
     padding: 10px 0 0 0;
 }
-.download-section {
-    background: url(../images/homepage/amsterdam-guidefinder.jpg);
-    background-size: cover;
+
+
+/*                            Reviews                                 */
+
+section#home-reviews {
+    width: 100%;
+    height: 50%;
+    color: #333;
+    background-image: url(../images/homepage/bg.png);
 }
 
-/*        Footer         */
-.footer-distributed{
-	background-color: #333;
-    border-top: 2px solid #333;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: normal 16px sans-serif;
+.talkcloud {
+    position: relative;
+    min-width: 245px;
+    width: auto;
+    min-height: 115px;
+    width: auto;
+    padding: 15px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #4aa3df solid 3px;
+}
 
-	padding: 55px 50px;
+.talkcloud:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -15px;
+    bottom: -15px;
+    left: 75%;
+}
+
+.talkcloud:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 17px 17px 0;
+    border-color: #4aa3df transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    margin-left: -17px;
+    bottom: -20px;
+    left: 75%;
+}
+
+
+/*                            Footer                                 */
+
+.footer-distributed {
+    background-color: #333;
+    border-top: 2px solid #333;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 55px 50px;
     margin-top: 50px;
     position: relative;
 }
 
-.footer-distributed .footer-left p{
-	color:  #8f9296;
-	font-size: 14px;
-	margin: 0;
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
 }
+
 
 /* Footer links */
 
-.footer-distributed p.footer-links{
-	font-size:18px;
-	font-weight: bold;
-	color:  #ffffff;
-	margin: 0 0 10px;
-	padding: 0;
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
 }
 
-.footer-distributed p.footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
 }
 
-.footer-distributed .footer-right{
-	float: right;
-	margin-top: 6px;
-	max-width: 180px;
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
 }
 
-.footer-distributed .footer-right a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-left: 3px;
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
 }
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
-	}
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
 }
