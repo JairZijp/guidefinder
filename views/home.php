@@ -64,12 +64,10 @@
 <header class="intro">
     <div class="intro-body">
         <div class="blauw">
-            <div class="container">
+            <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">GuideFinder</h1>
-                        <h2 class="intro-text">Find your personal guide!</h2>
-                    </div>
+                    <h1 class="brand-heading">GuideFinder</h1>
+                    <h2 class="intro-text">Find your personal guide!</h2>
                 </div>
             </div>
         </div>
@@ -92,7 +90,7 @@
                             <h2>Step 1</h2>
                             <h3>Where do you want a tour?</h3></div>
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
-                            <input type="text" name="where" class="form-control input-md" placeholder="Fill in a placename.." id="tags" value="<?= $info[''] ?>" tabindex="2">
+                            <input type="text" name="where" class="form-control input-md" placeholder="Fill in a placename.." id="tags" value="" tabindex="2">
                         </div>
                         <div class="col-sm-2 col-xs-12 marto20">
                             <button type="button" class="btn btn-default volgende">Next &raquo;</button>
@@ -124,29 +122,29 @@
                             <h3>With how many people are you going to take the tour?</h3></div>
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
                             <select class="form-control">
-                                    <option value="" disabled selected>Select how many persons...</option>
-                                    <option value="">1 person</option>
-                                    <option value="">2 persons</option>
-                                    <option value="">3 persons</option>
-                                    <option value="">4 persons</option>
-                                    <option value="">5 persons</option>
-                                    <option value="">6 persons</option>
-                                    <option value="">7 persons</option>
-                                    <option value="">8 persons</option>
-                                    <option value="">9 persons</option>
-                                    <option value="">10 persons</option>
-                                    <option value="">11 persons</option>
-                                    <option value="">12 persons</option>
-                                    <option value="">13 persons</option>
-                                    <option value="">14 persons</option>
-                                    <option value="">15 persons</option>
-                                    <option value="">16 persons</option>
-                                    <option value="">17 persons</option>
-                                    <option value="">18 persons</option>
-                                    <option value="">19 persons</option>
-                                    <option value="">20 persons</option>
-                                    <option value="" disabled>20+ persons - Please contact us</option>
-                                </select>
+                                <option value="" disabled selected>Select the number of persons...</option>
+                                <option value="">1 person</option>
+                                <option value="">2 persons</option>
+                                <option value="">3 persons</option>
+                                <option value="">4 persons</option>
+                                <option value="">5 persons</option>
+                                <option value="">6 persons</option>
+                                <option value="">7 persons</option>
+                                <option value="">8 persons</option>
+                                <option value="">9 persons</option>
+                                <option value="">10 persons</option>
+                                <option value="">11 persons</option>
+                                <option value="">12 persons</option>
+                                <option value="">13 persons</option>
+                                <option value="">14 persons</option>
+                                <option value="">15 persons</option>
+                                <option value="">16 persons</option>
+                                <option value="">17 persons</option>
+                                <option value="">18 persons</option>
+                                <option value="">19 persons</option>
+                                <option value="">20 persons</option>
+                                <option value="" disabled>20+ persons - Please contact us</option>
+                            </select>
                         </div>
                         <div class="col-sm-2 col-xs-12 marto20">
                             <button type="button" class="btn btn-default volgende">Next &raquo;</button>
@@ -183,33 +181,33 @@
                             <h3>Are there children, disabled or elder persons involved?</h3></div>
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
                             <div class="col-xs-6">
-                                    <div class="checkbox text-left">
-                                            <label>
-                                                <input type="checkbox" value="">Only adults
-                                            </label>
-                                    </div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <div class="checkbox text-left">
-                                            <label>
-                                                <input type="checkbox" value="">Includes Children
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <div class="checkbox text-left">
-                                            <label>
-                                                <input type="checkbox" value="">Including elder people
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <div class="checkbox text-left">
-                                            <label>
-                                                <input type="checkbox" value="">Including disabled people
-                                            </label>
-                                        </div>
-                                    </div>
+                                <div class="checkbox text-left">
+                                    <label>
+                                        <input type="checkbox" value="">Only adults
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="checkbox text-left">
+                                    <label>
+                                        <input type="checkbox" value="">Includes Children
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="checkbox text-left">
+                                    <label>
+                                        <input type="checkbox" value="">Including elder people
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="checkbox text-left">
+                                    <label>
+                                        <input type="checkbox" value="">Including disabled people
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm-2 col-xs-12 marto20">
                             <button type="button" class="btn btn-default volgende">Next &raquo;</button>
@@ -218,7 +216,7 @@
                             <div class="row marto20">
                                 <nav>
                                     <ul class="pagination">
-                                       <li>
+                                        <li>
                                             <a href="#" aria-label="Previous">
                                                 <span aria-hidden="true">&laquo;</span>
                                             </a>
@@ -255,7 +253,7 @@
                             <div class="row marto20">
                                 <nav>
                                     <ul class="pagination">
-                                       <li>
+                                        <li>
                                             <a href="#" aria-label="Previous">
                                                 <span aria-hidden="true">&laquo;</span>
                                             </a>
@@ -283,64 +281,64 @@
                             <h3>What kind of tour do you want?</h3></div>
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
                             <div class="col-lg-6">
-                                        <div class="input-group">
-                                          <span class="input-group-addon">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
                                             <input type="checkbox" value="">
                                           </span>
-                                            <label for="option5" class="form-control">Museum Tour</label>
-                                        </div>
-                                      </div>
-                                      <div class="col-lg-6">
-                                        <div class="input-group">
-                                          <span class="input-group-addon">
+                                    <label for="option5" class="form-control">Museum Tour</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
                                             <input type="checkbox" value="">
                                           </span>
-                                            <label for="option5" class="form-control">City Tour</label>
-                                        </div>
-                                      </div>
-                                    <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="input-group">
-                                          <span class="input-group-addon">
+                                    <label for="option5" class="form-control">City Tour</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
                                             <input type="checkbox" value="">
                                           </span>
-                                            <label for="option5" class="form-control">Pub-crawl</label>
-                                        </div>
-                                      </div>
-                                    <div class="col-lg-6">
-                                        <div class="input-group">
-                                          <span class="input-group-addon">
+                                        <label for="option5" class="form-control">Pub-crawl</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
                                             <input type="checkbox" value="">
                                           </span>
-                                            <label for="option5" class="form-control">Other</label>
-                                        </div>
-                                      </div>
-                        </div>
-                        <div class="col-sm-2 col-xs-12 marto20">
-                            <button type="button" class="btn btn-default volgende">Next &raquo;</button>
-                        </div>
-                        <div class="col-sd-offset-3 col-sd-6 col-xs-12">
-                            <div class="row marto20">
-                                <nav>
-                                    <ul class="pagination">
-                                       <li>
-                                            <a href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                        </li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li class="active"><a href="#">5</a></li>
-                                    </ul>
-                                </nav>
+                                        <label for="option5" class="form-control">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-12 marto20">
+                                <button type="button" class="btn btn-default volgende">Next &raquo;</button>
+                            </div>
+                            <div class="col-sd-offset-3 col-sd-6 col-xs-12">
+                                <div class="row marto20">
+                                    <nav>
+                                        <ul class="pagination">
+                                            <li>
+                                                <a href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li class="active"><a href="#">5</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 </header>
 
 <!-- About Section -->

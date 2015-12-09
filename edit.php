@@ -72,15 +72,15 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
                         <div class="col col-xs-12 gidscontainer">
                             <form method="post" enctype="multipart/form-data">
                                 <div class="col-md-6">
-                                   <div class="row">
-                                    <div class="col-sm-3 col-md-3 col-lg-12">
-                                        <div class="form-group">
-                                            <b>Profile picture</b>
-                                            <br>
-                                            <img height="125" width="125" src="images/profile/<?= $info['image']; ?>">
-                                            <input class="btn" type="file" accept="image/*" id="image" name="image">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-3 col-lg-12">
+                                            <div class="form-group">
+                                                <b>Profile picture</b>
+                                                <br>
+                                                <img height="125" width="125" src="images/profile/<?= $info['image']; ?>">
+                                                <input class="btn" type="file" accept="image/*" id="image" name="image">
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-6 col-md-6">

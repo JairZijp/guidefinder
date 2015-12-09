@@ -176,7 +176,10 @@ sorteren {
     padding: 5px;
     transition: all 0.2s ease-in-out;
 }
-
+.report {
+    position: absolute;
+    right: 10px;
+}
 
 /* --------------------- Admin ----------------------- */
 

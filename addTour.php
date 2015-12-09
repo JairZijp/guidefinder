@@ -4,7 +4,7 @@
 if(!$user->is_logged_in()){ header('Location: index.php?page=login'); }
 
 //define page title
-$title = 'Add Tour | GuideFinder';
+$title = 'My tours | GuideFinder';
 
 //include header template
 require('layout/header.php');

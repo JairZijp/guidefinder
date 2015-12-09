@@ -127,12 +127,26 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
 				?>
                                 <div class="col-xs-12">
                                     <div class="row">
+                                        <h3>All your reviews</h3>
+                                        <h5>Your current review status: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></h5>
+                                        <p>On this page you can see the reviews people have givin you. If a review is incorrect, offensive or threatening, please let us know by clicking the dropdown mark right in the top of the review.</p>
+                                        <hr>
                                         <div class="col-sm-5 review">
                                             <div class="media">
                                                 <a class="pull-left" href="#">
                                                     <img class="media-object dp img-circle" src="http://www.asthmamd.org/images/icon_user_1.png" style="width: 100px;height:100px;">
                                                 </a>
                                                 <div class="media-body">
+                                                   <div class="btn-group report">
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="report review">
+                                                        <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Incorrect</a></li>
+                                                            <li><a href="#">Offensive</a></li>
+                                                            <li><a href="#">Threatening</a></li>
+                                                        </ul>
+                                                    </div>
                                                     <h4 class="media-heading">John Doe <small>from England</small></h4>
                                                     <h5>Review: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></h5>
                                                     <h5>Tour: <a href="#">Amsterdam boat trip</a></h5>
@@ -146,7 +160,8 @@ function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
                                                     <!-- /panel-body -->
                                                 </div>
                                                 <!-- /panel panel-default -->
-                                                <div class="footer-review"><small>Review placed 5 days ago</small></div>
+                                                <div class="footer-review"><small>Review placed 5 days ago</small>
+                                                </div>
 
                                             </div>
 

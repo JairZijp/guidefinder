@@ -356,6 +356,11 @@ h1, h2, h3 {
     background: #4aa3df;
     position: relative;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
     top: 0;
 }
 #pijltje {
@@ -369,7 +374,6 @@ h1, h2, h3 {
     z-index: 3;
 }
 .intro .intro-body .brand-heading {
-    margin: 20% 0 0 0 ;
     font-size: 65px;
     color: #fff;
 }

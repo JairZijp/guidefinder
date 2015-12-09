@@ -3,7 +3,7 @@
 //if( $user->is_logged_in() ){ header('Location: memberpage.php'); }
 
 //define page title
-$title = 'Guide Finder';
+$title = 'GuideFinder | Find your personal guide!';
 //include header template
 require('layout/header.php');
 $page = (isset($_GET['page']))?$_GET['page']:"";
