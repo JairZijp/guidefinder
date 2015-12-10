@@ -60,6 +60,19 @@
         navigator.geolocation.getCurrentPosition(GoogleMap, showAmsterdam);
     }
 </script>
+<script>
+    function ValidateForm() {
+        $('span.error_msg').html('');
+        var success = true;
+        $("#personID input").each(function () {
+            if ($(this).val() == "") {
+                $(this).next().html("Field needs filling");
+                success = false;
+            }
+        });
+        return success;
+    }
+</script>
 <script src="js/home.js"></script>
 <header class="intro">
     <div class="intro-body">
@@ -89,7 +102,7 @@
                         <div class="col-xs-12">
                             <h2>Step 1</h2>
                             <h3>Where do you want a tour?</h3>
-                            <div class="alert alert-danger invullen hidden" role="alert">
+                            <div class="alert alert-danger invullen" role="alert" style="display:none;">
                                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                                 <span class="sr-only">Error:</span> Please fill in a placename
                             </div>
@@ -98,7 +111,7 @@
                             <input type="text" name="where" class="form-control input-md" placeholder="Fill in a placename.." id="tags" value="" tabindex="2">
                         </div>
                         <div class="col-sm-2 col-xs-12 marto20">
-                            <button type="button" class="btn btn-default volgende">Next &raquo;</button>
+                            <button type="button" class="btn btn-default volgende" onclick="ValidateForm">Next &raquo;</button>
                         </div>
                         <div class="col-sd-offset-3 col-sd-6 col-xs-12">
                             <div class="row marto20">
@@ -119,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag2">
+                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag2" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -178,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag3">
+                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag3" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -241,7 +254,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag4">
+                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag4" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -278,7 +291,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen hidden" id="vraag5">
+                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag5" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -390,26 +403,26 @@
 <section id="home-reviews" class="flex">
     <div class="container">
         <div class="col-xs-12">
-           <h2 class="center">What people say about us...</h2>
-          <div class="col-xs-3">
-            <div class="talkcloud flex">
-                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
-            </div>
+            <h2 class="center">What people say about us...</h2>
+            <div class="col-xs-3">
+                <div class="talkcloud flex">
+                    <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+                </div>
             </div>
             <div class="col-xs-3">
-            <div class="talkcloud flex">
-                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
-            </div>
-            </div>
-            <div class="col-xs-3">
-            <div class="talkcloud flex">
-                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
-            </div>
+                <div class="talkcloud flex">
+                    <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+                </div>
             </div>
             <div class="col-xs-3">
-            <div class="talkcloud flex">
-                <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+                <div class="talkcloud flex">
+                    <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+                </div>
             </div>
+            <div class="col-xs-3">
+                <div class="talkcloud flex">
+                    <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 $(function () {
     $(".volgende").on('click', function () {
-        $("#vraag2").removeClass("hidden");
-        $("#vraag1").addClass("hidden");
+        $("#vraag1").fadeOut(300);
+        $("#vraag2").delay(300).fadeIn(300);
     });
 })
