@@ -85,8 +85,8 @@ class User extends Password{
         return $allGuides;
     }
 
-    public function addTour($memberID, $username, $name, $image, $price, $description, $adults, $aged, $children, $disabled,$monday,$tuesday,$wednesday,$thursday,$friday,$saturday,$sunday) {
-        $statement = $this->_db->prepare('INSERT INTO tours(memberID, username, name, image, price, description, adults, aged, children, disabled,monday,tuesday,wednesday,thursday,friday,saturday,sunday) VALUES (:memberID, :username, :name, :image, :price, :description, :adults, :aged, :children, :disabled,:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday)');
+    public function addTour($memberID, $username, $name, $image, $price, $description, $adults, $aged, $children, $disabled) {
+        $statement = $this->_db->prepare('INSERT INTO tours(memberID, username, name, image, price, description, adults, aged, children, disabled) VALUES (:memberID, :username, :name, :image, :price, :description, :adults, :aged, :children, :disabled)');
 
         $statement->execute(array(
             "memberID" => $memberID,
@@ -98,14 +98,7 @@ class User extends Password{
             "adults" => $adults,
             "aged" => $aged,
             "children" => $children,
-            "disabled" => $disabled,
-            "monday" => $monday,
-            "tuesday" => $tuesday,
-            "wednesday" => $wednesday,
-            "thursday" => $thursday,
-            "friday" => $friday,
-            "saturday" => $saturday,
-            "sunday" => $sunday
+            "disabled" => $disabled
         ));
 
         return $statement;

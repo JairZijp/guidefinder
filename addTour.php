@@ -90,43 +90,6 @@ require('layout/header.php');
 
             	<p>Description: <textarea type="text" class="form-control input-md" name="description" placeholder="Type a description for the tour..."></textarea></p>
                
-<!--
-                <div class="form-group">
-                Monday:
-                <input type="time" name="monday">
-                <input type="time" name="monday2">
-            </div>
-            <div class="form-group">
-                Tuesday:
-                <input type="time" name="tuesday">
-                <input type="time" name="tuesday2">
-            </div>
-            <div class="form-group">
-                Wednesday:
-                <input type="time" name="wednesday">
-                <input type="time" name="wednesday2">
-            </div>
-            <div class="form-group">
-                Thursday:
-                <input type="time" name="thursday">
-                <input type="time" name="thursday2">
-            </div>
-            <div class="form-group">
-                Friday:
-                <input type="time" name="friday">
-                <input type="time" name="friday2">
-            </div>
-            <div class="form-group">
-                Saturday:
-                <input type="time" name="saturday">
-                <input type="time" name="saturday2">
-            </div>
-            <div class="form-group">
-                Sunday:
-                <input type="time" name="sunday">
-                <input type="time" name="sunday2">
-            </div>
--->
             <div class="row">
             <div class="col-md-2">
             <div class="form-group">

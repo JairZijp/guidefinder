@@ -143,7 +143,7 @@
                                     </div>
                                 </li>
                                 <li class="divider navbar-login-session-bg"></li>
-                                <li><a href='edit.php'>Edit Profile <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                                <li><a href='index.php?page=editprofile'>Edit Profile <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
                                 <li><a href='addTour.php'>Add Tour <span class="glyphicon glyphicon-flag pull-right"></span></a></li>
                                 <li><a href='payments.php'>Payments <span class="
 glyphicon glyphicon-transfer pull-right"></span></a></li>
