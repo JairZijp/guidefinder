@@ -7,7 +7,7 @@ if(!$user->is_logged_in()){ header('Location: index.php?page=login'); }
 $title = 'Your reviews | GuideFinder';
 
 //include header template
-require('layout/header.php');
+
 
 ?>
 
