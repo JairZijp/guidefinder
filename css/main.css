@@ -15,7 +15,7 @@ h3 {
 
 .bg-danger,
 .bg-success {
-    padding: 0 5px;
+    padding:10px;
 }
 
 .nomar {
@@ -39,8 +39,26 @@ h3 {
     max-width: 20px;
     margin: -3px 0 0 0;
 }
-
-
+/* ------------------------------ Registreren & login -------------------------------- */
+.stap {
+    width: 50px;
+    height: 50px;
+    background-color: #aaa;
+    margin: 0 20px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 600;
+    float: left;
+    line-height: 50px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.stap-text {
+    float: left;
+    padding: 15px;
+}
 /* ------------------------------ All Guides page -------------------------------- */
 
 .sorteren {

@@ -359,26 +359,123 @@
             </div>
 </header>
 
+<div class="row">
+    <div class="row-height">
+        <div class="col-xs-6 col-height">
+            <div class="inside">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="col-xs-3 col-height col-top">
+            <div class="inside">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="col-xs-2 col-height col-middle">
+            <div class="inside">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="col-xs-1 col-height col-bottom">
+            <div class="inside">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- About Section -->
-<section id="howitworks" class="container content-section text-center flex">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2>How does it work?</h2>
-            <div class="col col-lg-6 col-sm-6 col-xs-12"><span class="nummer">1</span>
-                <h4 class="titel">You are booking a guide</h4></div>
-            <div class="col col-lg-6 col-sm-6 col-xs-12"><span class="nummer">2</span>
-                <h4 class="titel">Guide will get in contact</h4></div>
-            <div class="col col-lg-6 col-lg-6 col-xs-12"><span class="nummer">3</span>
-                <h4 class="titel">Guide is giving the tour</h4></div>
-            <div class="col col-lg-6 col-sm-6 col-xs-12"><span class="nummer">4</span>
-                <h4 class="titel">Payment after the tour</h4></div>
-            <p></p>
+<section id="howitworks" class="container-breed text-center flex">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>How does it work?</h2>
+                <h3>Simply book a guide in 6 steps!</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail stappen">
+                    <span class="badge stapuitleg">1</span>
+                    <h4>Where do you want a tour?</h4>
+                    <hr>
+                    <div class="stapicoon">
+                        <img src="images/homepage/stappen/vergrootglas-GuideFinder.png" alt="Stap1" title="zoeken">
+                    </div>
+                    <div class="caption">
+                        <p>Anwser some questions in the fuild above, so oursystem knows what you are looking for</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail stappen">
+                    <span class="badge stapuitleg">2</span>
+                    <h4>Pick the guide thats best for you</h4>
+                    <hr>
+                    <div class="stapicoon">
+                        <img src="images/homepage/stappen/gidsen-GuideFinder.png" alt="Stap1" title="zoeken">
+                    </div>
+                    <div class="caption">
+                        <p>We show some recommeted guides for you, but you pick your guide thats best for you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail stappen">
+                    <span class="badge stapuitleg">3</span>
+                    <h4>Guide will get in contact</h4>
+                    <hr>
+                    <div class="stapicoon">
+                        <img src="images/homepage/stappen/mail-GuideFinder.png" alt="Stap1" title="zoeken">
+                    </div>
+                    <div class="caption">
+                        <p>Guide is sending you an email to make an oppointment witin an hour
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail stappen">
+                    <span class="badge stapuitleg">4</span>
+                    <h4>You will meet your guide</h4>
+                    <hr>
+                    <div class="stapicoon">
+                        <img src="images/homepage/stappen/map-GuideFinder.png" alt="Stap1" title="zoeken">
+                    </div>
+                    <div class="caption">
+                        <p>At the location, date and time you have agreed to meet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail stappen">
+                    <span class="badge stapuitleg">5</span>
+                    <h4>Guide will give the tour</h4>
+                    <hr>
+                    <div class="stapicoon">
+                        <img src="images/homepage/stappen/gids-GuideFinder.png" alt="Stap1" title="zoeken">
+                    </div>
+                    <div class="caption">
+                        <p>At the location, date and time you have agreed to meet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail stappen6">
+                    <span class="badge stapuitleg">6</span>
+                    <h4>Payment after the tour</h4>
+                    <hr>
+                    <div class="stapicoon">
+                        <img src="images/homepage/stappen/betaling-GuideFinder.png" alt="Stap1" title="zoeken">
+                    </div>
+                    <div class="caption">
+                        <p>He of she will be informing you of everything interesting in the tour</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Download Section -->
-<section id="about" class="content-section text-center flex">
+<section id="about" class="text-center flex">
     <div class="container">
         <div class="col-lg-12">
             <h2>GuideFinder?</h2>
