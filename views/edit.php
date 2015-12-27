@@ -5,8 +5,6 @@ if(!$user->is_logged_in()){ header('Location: index.php?page=login'); }
 //define page title
 $title = 'Edit Personal Page | GuideFinder';
 
-//include header template
-require('layout/header.php');
 
 ?>
     <script>

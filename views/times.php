@@ -6,8 +6,6 @@ if(!$user->is_logged_in()){ header('Location: index.php?page=login'); }
 //define page title
 $title = 'Edit Times Page | GuideFinder';
 
-//include header template
-require('layout/header.php');
 
 ?>
 
