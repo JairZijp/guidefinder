@@ -119,7 +119,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span class="glyphicon glyphicon-user"></span>
                                 <strong><?= $info['firstname']; ?></strong>
-                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                <i class="fa fa-caret-down"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>

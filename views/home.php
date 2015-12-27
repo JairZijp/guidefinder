@@ -414,7 +414,7 @@
                         <img src="images/homepage/stappen/gidsen-GuideFinder.png" alt="Stap1" title="zoeken">
                     </div>
                     <div class="caption">
-                        <p>We show some recommeted guides for you, but you pick your guide thats best for you</p>
+                        <p>We show some recommended guides for you, then you pick your guide thats best for you</p>
                     </div>
                 </div>
             </div>

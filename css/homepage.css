@@ -111,8 +111,8 @@ section#howitworks {
 }
 
 .stapicoon {
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
 }
 
@@ -161,29 +161,29 @@ ul.banner-social-buttons {
 /*         Eigen CSS        */
 
 .stappen {
-    padding: 20px;
+    padding: 10px;
     border: 3px solid #4AA3E1;
     background: transparent;
     background: #fff;
 }
 
 .stappen6 {
-    padding: 20px;
+    padding: 10px;
     border: 3px solid #4AA3E1;
     background: transparent;
     background: #fff;
 }
 
 .stapuitleg {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: #2980b9;
     text-align: center;
     vertical-align: middle;
     color: #fff;
     font-weight: 600;
     font-size: 1em;
-    line-height: 35px;
+    line-height: 30px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -202,41 +202,6 @@ ul.banner-social-buttons {
 .btn-primary {
     background: #4aa3df;
     border: 0;
-}
-
-.gidscontainer {
-    height: auto;
-    border-left: 1px solid #4aa3df;
-    border-bottom: 1px solid #4aa3df;
-    border-right: 1px solid #4aa3df;
-    padding: 15px;
-    overflow: hidden;
-}
-
-.gidspagina-actief,
-.gidspagina-actief:focus {
-    color: #333 !important;
-    text-decoration: none !important;
-}
-
-.gidspagina-actief:hover {
-    text-decoration: none;
-    color: #333;
-}
-
-.gidspagina,
-.gidspagina:focus {
-    color: #999;
-    text-decoration: none;
-}
-
-.gidspagina:hover {
-    text-decoration: none;
-    -webkit-transition: 100ms ease-in-out 100ms;
-    -moz-transition: 100ms ease-in-out 100ms;
-    -o-transition: 100ms ease-in-out 100ms;
-    transition: 100ms ease-in-out 100ms;
-    color: #4aa3df;
 }
 
 .pagination>.active>a,
@@ -299,16 +264,6 @@ h2.titel {
 
 .stap-actief {
     background-color: #4aa3df;
-}
-
-.actief {
-    border-left: 1px solid #4aa3df;
-    border-right: 1px solid #4aa3df;
-    border-top: 1px solid #4aa3df;
-}
-
-.border {
-    border-bottom: 1px solid #4aa3df;
 }
 
 .center {
@@ -639,14 +594,14 @@ section#home-reviews {
     .stappen:after {
         border-color: rgba(136, 183, 213, 0);
         border-left-color: #4AA3E1;
-        border-width: 20px;
-        margin-top: -20px;
+        border-width: 18px;
+        margin-top: -18px;
     }
     .stappen:before {
         border-color: rgba(74, 163, 225, 0);
         border-left-color: #4AA3E1;
-        border-width: 23px;
-        margin-top: -23px;
+        border-width: 20px;
+        margin-top: -20px;
     }
 }
 

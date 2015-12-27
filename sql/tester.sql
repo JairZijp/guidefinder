@@ -60,10 +60,10 @@ CREATE TABLE IF NOT EXISTS `members` (
 --
 
 INSERT INTO `members` (`memberID`, `username`, `password`, `email`, `active`, `activeAdmin`, `resetToken`, `resetComplete`, `firstname`, `lastname`, `address`, `zipcode`, `city`, `phone`, `sex`, `image`, `description`, `NL`, `GE`, `EN`, `ES`, `RU`, `FR`, `IT`, `CH`, `usertype`) VALUES
-(1, 'Jair', '$2y$10$/bwIM6Psrg/kijouoO/./eJS.ZfMSJtzsLSLyW/h3/dbVzChOZTJ2', '', 'Yes', 'Yes', NULL, 'No', '', '', '', '', '', '', '', 'b05c518ec11ad8f5713ecac06ba7cbad.png', 'Hi my name is Jair', 'goed', 'goed', 'matig', 'goed', 'goed', 'onvoldoende', 'goed', 'matig', ''),
-(103, 'admin', '$2y$10$/bwIM6Psrg/kijouoO/./eJS.ZfMSJtzsLSLyW/h3/dbVzChOZTJ2', 'jairzijp123@gmail.com', 'Yes', 'Yes', NULL, 'No', 'Admin', 'Admin', 'admin', 'admin', 'admin', '06', 'admin', 'e703f6dfb08ec143a7151378aa08a751.png', 'Hi I''m the admin.', 'goed', 'goed', 'matig', 'goed', 'goed', 'onvoldoende', 'goed', 'matig', 'admin');
+(1, 'Jair', '$2y$10$/bwIM6Psrg/kijouoO/./eJS.ZfMSJtzsLSLyW/h3/dbVzChOZTJ2', '', 'Yes', 'Yes', NULL, 'No', '', '', '', '', '', '', '', 'b05c518ec11ad8f5713ecac06ba7cbad.png', 'Hi my name is Jair', 'good', 'good', 'moderate', 'good', 'good', 'inadequate', 'good', 'moderate', ''),
+(103, 'admin', '$2y$10$/bwIM6Psrg/kijouoO/./eJS.ZfMSJtzsLSLyW/h3/dbVzChOZTJ2', 'jairzijp123@gmail.com', 'Yes', 'Yes', NULL, 'No', 'Admin', 'Admin', 'admin', 'admin', 'admin', '06', 'admin', 'e703f6dfb08ec143a7151378aa08a751.png', 'Hi I''m the admin.', 'good', 'good', 'moderate', 'good', 'good', 'inadequate', 'good', 'moderate', 'admin');
 
--- --------------------------------------------------------
+-- --------------------------------------------------------s
 
 --
 -- Tabelstructuur voor tabel `tours`

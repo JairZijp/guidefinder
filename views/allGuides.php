@@ -35,7 +35,7 @@
         <hr>
     </div>
     <div class="col-xs-12 col-sm-3">
-        <div class="guidefilters">
+        <div class="sidebar_links">
             <h3 class="filtertitel">Filters:</h3>
             <hr>
             <div class="checkbox">
