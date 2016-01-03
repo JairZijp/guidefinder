@@ -21,7 +21,7 @@
         $('#percentage').val(Math.round($('.scrub').position().left * 1000 / 2720) + 'Miles');
     }
 
-    // filter show meer en minder 
+    // filter show meer en minder
     //    $('.morefilter').on('click', function (e) {
     //        e.preventDefault();
     //        var $this = $(this);
@@ -212,7 +212,7 @@
                     </p>
                     <hr>
                     <p class="guidebuttons">
-                        <button class="btn-primary guidebutton">Show profile</button>
+                        <a href="?page=guide&memberID=<?= $info['memberID'] ?>"><button class="btn-primary guidebutton">Show profile</button></a>
                         <button class="btn-warning guidebutton">Contact guide!</button>
                     </p>
                 </div>

@@ -1,22 +1,25 @@
 <?php
 include('Password.php');
-class User extends Password{
+class User extends Password {
 
     private $_db;
+    private $_memberID;
 
-    function __construct($db){
-    	parent::__construct();
-
-    	$this->_db = $db;
+    function __construct($db,$memberID){
+        parent::__construct();
+        $this->_db = $db;
+        $this->_memberID = $memberID;
     }
 
 	private function get_user_hash($username){
         try {
 			$stmt = $this->_db->prepare('SELECT password FROM members WHERE username = :username AND active="Yes" ');
-			$stmt->execute(array('username' => $username));
+
+            $stmt->execute(array('username' => $username));
 
 			$row = $stmt->fetch();
-			return $row['password'];
+
+            return $row['password'];
 
 		} catch(PDOException $e) {
 		    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
@@ -31,6 +34,21 @@ class User extends Password{
         $userInfo = $result->fetchAll();
 
 		return $userInfo;
+    }
+
+    public function getPublicUserData() {
+
+        $guidesInfo = array();
+
+        $result = $this->_db->prepare('SELECT * FROM members WHERE memberID ='.$this->_memberID);
+
+        $result->execute();
+
+        $guidesInfo = $result->fetch();
+
+        return $guidesInfo;
+
+
     }
 
     public function updateUserData($username,$email,$firstname,$lastname,$address,$zipcode,$city,$phone,$image,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH) {
@@ -153,4 +171,3 @@ class User extends Password{
 
 
 }
-?>

@@ -43,8 +43,9 @@ switch ($page) {
 	case 'editprofile':
 		include('views/edit.php');
 		break;
-
-
+	case 'guide':
+		include('views/guide.php');
+		break;
 	default:
 		$title = 'Guide Finder';
 		include ('views/home.php');

@@ -8,7 +8,7 @@ date_default_timezone_set('Europe/London');
 //database credentials
 define('DBHOST','localhost');
 define('DBUSER','root');
-define('DBPASS','root');
+define('DBPASS','admin');
 define('DBNAME','tester');
 
 //application address
@@ -27,5 +27,6 @@ try {
     exit;
 }
 include('classes/User.php');
-$user = new User($db);
+$memberID = isset($_GET['memberID']) ? $_GET['memberID'] : 1;
+$user = new User($db,$memberID);
 ?>

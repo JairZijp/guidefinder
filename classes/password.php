@@ -6,8 +6,9 @@ if (!defined('PASSWORD_BCRYPT')) {
 
 Class Password {
 
-    public function __construct() {}
+    public function __construct(){
 
+    }
 
     /**
      * Hash the password using the specified algorithm

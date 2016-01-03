@@ -205,21 +205,22 @@ $title = 'Edit Personal Page | GuideFinder';
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <b>About</b>
-                                        <form name="myform">
+
                                             <textarea class="form-control" rows="6" id="comment" name="limitedtextarea" placeholder="Tell something about yourself, this will be displayed on your profile page" onKeyDown="limitText(this.form.limitedtextarea,this.form.countdown,350);" onKeyUp="limitText(this.form.limitedtextarea,this.form.countdown,350);"><?= $info['description'] ?></textarea>
                                             <font size="1">(Maximum characters: 350)<br>
 You have <input readonly type="text" name="countdown" size="3" value="350"> characters left.</font>
-                                        </form>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-12 text-right">
+                                            <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12">
-                                <div class="row">
-                                    <div class="col-xs-12 text-right">
-                                        <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">
-                                    </div>
-                                </div>
-                            </div>
+
                         </form>
 
                         <?php
