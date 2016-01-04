@@ -9,6 +9,8 @@ $title = $_SESSION['username'] . ' | GuideFinder';
 //include header template
 require('layout/header.php');
 
+
+
 ?>
     <!--   Lees meer click effect-->
     <script src="js/prefixfree.min.js"></script>
@@ -53,11 +55,11 @@ require('layout/header.php');
     </script>
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-        
+
         .morecontent span {
             display: none;
         }
-        
+
         .morelink {
             display: block;
         }
@@ -186,6 +188,18 @@ return implode($separator, $breadcrumbs);
                     <a href="#" target="_blank"> <i class="fa fa-twitter-square fa-lg pad3"></i></a>
                 </p>
             </div>
+            <?php
+            $selected = (isset($_GET['selected']))?$_GET['selected']:"";
+
+            switch ($selected) {
+            	case 'times':
+                    include('views/profile/times.php');
+                    break;
+                case 'reviews':
+                    include('views/profile/reviews.php');
+                    break;
+                default:
+            ?>
             <div class="col-xs-12 col-sm-9 profielcontent">
                 <?php
                     $active = "active";
@@ -240,11 +254,12 @@ return implode($separator, $breadcrumbs);
 				?>
                     </div>
             </div>
+            <?php } ?>
 </div>
 </div>
 </div>
 </div>
-            
+
             <?php
 //include header template
 require('layout/footer.php');

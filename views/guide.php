@@ -92,10 +92,22 @@ $guidesInfo = $user->getPublicUserData();
             </p>
 
         </div>
+        <?php
+        $selected = (isset($_GET['selected']))?$_GET['selected']:"";
+
+        switch ($selected) {
+            case 'times':
+                include('views/profile/times-public.php');
+                break;
+            case 'reviews':
+                include('views/profile/reviews-public.php');
+                break;
+            default:
+        ?>
         <div class="col-xs-12 col-sm-9 profielcontent">
             <?php
                 $active = "active";
-                include('layout/head-view-profile.php');?>
+                include('layout/head-view-profile-public.php');?>
                 <div class="col-xs-12" id="locations">
                     <h3>Tours:</h3>
 
@@ -146,6 +158,7 @@ $guidesInfo = $user->getPublicUserData();
             ?>
                 </div>
         </div>
+        <?php } ?>
 
 </div>
 </div>
