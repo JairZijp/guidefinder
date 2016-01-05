@@ -83,7 +83,6 @@
             });
         });
     </script>
-
 </head>
 
 <body>
@@ -97,7 +96,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.php">
-                    <img src="http://placehold.it/150x50&text=GuideFinder" alt="">
+                    <img src="images/logo-top-guidefinder.png" alt="Guidefinder" class="logo-top" title="Guidefinder" style="opacity: 1;">
                 </a>
             </div>
             <div class="collapse navbar-collapse">

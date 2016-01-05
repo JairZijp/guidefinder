@@ -73,13 +73,53 @@
         return success;
     }
 </script>
+<style>
+    .logo-top {
+        opacity: 0;
+    }
+</style>
+<script>
+    $(function () {
+
+        divFade = $(".logo-top");
+
+        var toggleHeader = function (noAnimate) {
+
+            var threshold = 40,
+                fadeLength = 150,
+                opacity,
+                scrollTop = $(document).scrollTop();
+
+            if (scrollTop < threshold) {
+                opacity = 0;
+            } else if (scrollTop > threshold + fadeLength) {
+                opacity = 1;
+            } else {
+                if (noAnimate) {
+                    opacity = 1;
+                } else {
+                    opacity = (scrollTop - threshold) / fadeLength;
+                }
+            }
+
+            divFade.css("opacity", opacity);
+
+        };
+
+        toggleHeader(true);
+        $(window).scroll(function () {
+            toggleHeader();
+        });
+
+    });
+</script>
 <script src="js/home.js"></script>
 <header class="intro">
     <div class="intro-body">
         <div class="blauw flex">
             <div class="col-md-8">
                 <div class="row">
-                    <h1 class="brand-heading">GuideFinder</h1>
+                    <img src="images/logo-guidefinder.png" alt="logo" class="logo">
                     <h2 class="intro-text">Find your personal guide!</h2>
                 </div>
             </div>

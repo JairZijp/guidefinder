@@ -54,7 +54,25 @@ h3 {
     padding: 15px;
     border: 3px solid #ddd;
 }
-
+.logo {
+    margin-top: 50px;
+    width: 350px;
+}
+.logo-top {
+    position: relative;
+    top: -10px;
+    padding: 5px;
+    width: 106px;
+    height: 66px;
+}
+.logo-top:hover {
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transform:rotate(10deg) scale(1.15);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transform:rotate(10deg) scale(1.15);
+}
 /* ------------------------------ Registreren & login -------------------------------- */
 
 .stap {
