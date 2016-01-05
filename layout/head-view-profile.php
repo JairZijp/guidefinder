@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs ">
     <li role="presentation" class="<?php echo ($selected == "" ? "active-blauw " : " ")?>">
         <a href="memberpage.php" class="gidspagina gidspagina-<?php echo ($page == " tours " ? "active-blauw " : " ")?>"><h3 class="center"><i class="fa fa-map-marker" title="Tours"></i><br><span class="hidden-xs">Tours</span></h3></a></li>
 

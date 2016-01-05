@@ -6,7 +6,7 @@ html {
 h1,
 h2,
 h3 {
-    font-weight: 600;
+    font-weight: 601;
 }
 
 .nobor {
@@ -206,7 +206,7 @@ h3.filtertitel {
     color: #4aa3df;
 }
 .offset-border {
-    border-bottom: 1px solid #4aa3df; 
+    border-bottom: 1px solid #4aa3df;
 }
 .user-image {
     border-radius: 50%;

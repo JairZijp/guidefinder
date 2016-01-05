@@ -202,6 +202,7 @@ return implode($separator, $breadcrumbs);
             ?>
             <div class="col-xs-12 col-sm-9 profielcontent">
                 <?php
+                
                     $active = "active";
                     include('layout/head-view-profile.php');?>
                     <div class="col-xs-12" id="locations">
