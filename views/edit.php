@@ -254,6 +254,9 @@ You have <input readonly type="text" name="countdown" size="3" value="350"> char
 					    echo 'error : ' . $handle->error;
 					  }
 					}
+                    if (empty($_FILES['image']['name'])) {
+                        $newName = $info['image'];
+                    }
 					/*if (empty($_FILES['image']['name'])) {
 					    $file = $info['image'];
 					} else {
@@ -267,7 +270,7 @@ You have <input readonly type="text" name="countdown" size="3" value="350"> char
 					$IT = $_POST['IT'];
 					$CH = $_POST['CH'];
 					$ES = $_POST['ES'];
-					$description = $_POST['description'];
+					$description = $_POST['limitedtextarea'];
 					$user->updateUserData($_SESSION['username'],$_POST['email'],$_POST['firstname'],$_POST['lastname'],$_POST['address'],$_POST['zipcode'],$_POST['city'],$_POST['number'],$newName . $extensie,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH);
 					//move_uploaded_file($_FILES['image']['tmp_name'], 'images/profile/'. $newName);
 
