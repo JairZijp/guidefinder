@@ -94,7 +94,8 @@ a:focus {
 
 section#about {
     width: 100%;
-    height: 50%;
+    height: auto;
+    min-height: 50%;
     color: #fff;
     background-color: #4aa3df;
 }
@@ -295,7 +296,10 @@ textarea {
     color: #fff;
     border: none;
 }
-
+.volgende:hover, .volgende:focus {
+    background: #4aa3df;
+    color: #fff;
+}
 .marto20 {
     margin-top: 20px;
 }
@@ -382,6 +386,8 @@ h3 {
 }
 
 #maps {
+    background: url(../images/homepage/maps-amsterdam-bg-guidefinder.jpg) no-repeat;
+    background-size: 100%;
     margin: -25px 0 0 0;
     width: 100%;
     min-height: 60%;
@@ -456,7 +462,8 @@ h4.titel {
 
 section#home-reviews {
     width: 100%;
-    height: 50%;
+    height: auto;
+    min-height: 50%;
     color: #333;
     background-image: url(../images/homepage/bg.png);
 }
@@ -467,6 +474,7 @@ section#home-reviews {
     width: auto;
     min-height: 115px;
     width: auto;
+    margin: 10px;
     padding: 15px;
     background: #FFFFFF;
     -webkit-border-radius: 10px;

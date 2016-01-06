@@ -21,15 +21,19 @@ h3 {
 .nomar {
     margin: 0;
 }
+
 .nopad {
     padding: 0;
 }
+
 .nobold {
     font-weight: normal;
 }
+
 .pad3 {
     padding: 3px;
 }
+
 .bold {
     font-weight: 600;
 }
@@ -38,40 +42,25 @@ h3 {
 .grey {
     color: #999;
 }
+
 .wit {
     color: #fff;
 }
+
 .schaduw {
     text-shadow: 0px 0px 10px rgba(84, 84, 84, 1);
 }
+
 .taal-vlag {
     max-width: 20px;
     margin: -3px 0 0 0;
 }
+
 .sidebar_links {
     margin: 20px 0;
     background: #fff;
     padding: 15px;
     border: 3px solid #ddd;
-}
-.logo {
-    margin-top: 50px;
-    width: 350px;
-}
-.logo-top {
-    position: relative;
-    top: -10px;
-    padding: 5px;
-    width: 106px;
-    height: 66px;
-}
-.logo-top:hover {
-    -webkit-transition-duration: 200ms;
-    -webkit-transition-timing-function: ease-in-out;
-    -webkit-transform:rotate(10deg) scale(1.15);
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
-    transform:rotate(10deg) scale(1.15);
 }
 /* ------------------------------ Registreren & login -------------------------------- */
 
@@ -131,13 +120,13 @@ button.guidebutton {
 
 /* --------- Gids filters ----------- */
 
-
 h3.filtertitel {
     font-weight: bold;
     clear: both;
 }
 
-.filtertype, .sidebartitel {
+.filtertype,
+.sidebartitel {
     font-weight: bold;
 }
 
@@ -176,16 +165,21 @@ h3.filtertitel {
 
 /* ----------------------------- Profile pagina ---------------------------------- */
 
+
 /*navigatie*/
+
 .active-blauw {
     border: 2px solid #4aa3df;
     border-bottom: 2px solid #fff;
     z-index: 2;
 }
+
 .nav-tabs>li>a {
     margin: 0;
 }
-.nav>li>a:focus, .nav>li>a:hover {
+
+.nav>li>a:focus,
+.nav>li>a:hover {
     background: none;
 }
 
@@ -218,14 +212,16 @@ h3.filtertitel {
 .gidspagina:hover {
     text-decoration: none;
     -webkit-transition: 100ms ease-in-out 100ms;
-    -moz-transition: 100ms ease-in-out 100ms;
+    -moz-tra8sition: 100ms ease-in-out 100ms;
     -o-transition: 100ms ease-in-out 100ms;
     transition: 100ms ease-in-out 100ms;
     color: #4aa3df;
 }
+
 .offset-border {
     border-bottom: 1px solid #4aa3df;
 }
+
 .user-image {
     border-radius: 50%;
     border: 3px solid #eee;
@@ -241,96 +237,110 @@ h3.filtertitel {
     border: 2px solid #4aa3df;
     border-radius: 3px;
 }
+
 .verglijkbaar {
     background: orange;
 }
+
 .tour-image {
     width: 100%;
+    display:block;
+    margin:auto;
 }
-
+.img-tour {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
 sorteren {
     width: 10%;
 }
+
 .sidebar-foto {
     width: 100%;
     padding: 0;
-    margin: 0;
     line-height: 0;
 }
-
+.profile-photo {
+    padding: 0 8px;
+}
 .vergroot {
-  position: fixed;
+    position: fixed;
     z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1337;
-  background: rgba(0, 0, 0, 0.75);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1337;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .vergroot::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
-  padding: .5em 1em;
-  background: black;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
-  content: "loading…";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    padding: .5em 1em;
+    background: black;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    content: "loading…";
 }
+
 .vergroot .vergroot-effect {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  right: 5%;
-  bottom: 5%;
-  z-index: 1;
-  opacity: 0;
-  -webkit-transform: scale(0.3);
-          transform: scale(0.3);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
 }
+
 .vergroot .vergroot-img-container {
-  display: none;
+    display: none;
 }
+
 .vergroot .vergroot-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: center / contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: center / contain no-repeat;
 }
 
 [data-action="vergroot"]:focus ~ .vergroot {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 [data-action="vergroot"]:focus ~ .vergroot::before {
-  opacity: 1;
-  -webkit-transition: opacity 0.75s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
-  transition: opacity 0.75s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+    opacity: 1;
+    -webkit-transition: opacity 0.75s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+    transition: opacity 0.75s cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
 }
+
 [data-action="vergroot"]:focus ~ .vergroot .vergroot-effect {
-  opacity: 1;
-  -webkit-transform: scale(.5);
-          transform: scale(.5);
-  -webkit-transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 [data-action="vergroot"]:focus ~ .vergroot .vergroot-img-container {
-  display: block;
+    display: block;
 }
-
-
-
 
 .fb-profile img.fb-image-lg {
     z-index: 0;
@@ -347,10 +357,12 @@ sorteren {
     z-index: 9;
     width: 100%;
 }
+
 .social_profiel {
     font-size: 1.5em;
     margin: -10px 0 0 0;
 }
+
 .profielcontent {
     margin: 0;
     background: #fff;
@@ -359,9 +371,11 @@ sorteren {
 
 
 /* --------------------- Reviews ----------------------- */
+
 .voorstellen {
-    margin: -70px 0 0 0 ;
+    margin: -70px 0 0 0;
 }
+
 .review {
     border: 3px solid #eee;
     border-radius: 3px;

@@ -1,6 +1,5 @@
 .navbar-login {
     width: 305px;
-    padding: 10px;
     padding-bottom: 0px;
 }
 
@@ -21,19 +20,19 @@ div.collapse.navbar-collapse > ul > li > a {
 }
 div.collapse.navbar-collapse > ul > li > a:focus {
     color: #fff;
-    background: rgba(41, 128, 185, 0.2);
+    background: rgba(41, 128, 185, 0.4);
 }
 div.collapse.navbar-collapse > ul > li > a:hover {
     color: #fff;
     background: rgba(41, 128, 185, 0.4);
 }
 
-div.collapse.navbar-collapse > ul > li.active > a {
+div.collapse.navbar-collapse > ul > .active > a {
     color: #fff;
     background: #2980b9;
     
 }
-div.collapse.navbar-collapse > ul > li.active:after {
+div.collapse.navbar-collapse > ul > .active:after {
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -46,4 +45,56 @@ div.collapse.navbar-collapse > ul > li.active:after {
 	border-top-color: #2980b9;
 	border-width: 8px;
 	margin-left: -8px;
+}
+/*logo navbar en navbar mobiel!*/
+
+.logo {
+    margin-top: 50px;
+    width: 350px;
+}
+
+.logo-top {
+    position: relative;
+    top: -10px;
+    padding: 5px;
+    width: 106px;
+    height: 66px;
+}
+
+.logo-top:hover {
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transform: rotate(10deg) scale (1.15);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transform: rotate(10deg) scale(1.15);
+}
+
+.navbar-nav {
+    width: 100%;
+}
+.in, .collapsing {
+    clear: both;
+}
+.mobiel {
+    text-align: center;
+}
+.nav>li>a.gebruiker {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background: rgba(41, 128, 185, 0.4);
+    border-radius: 3px;
+}
+.gebruiker, .gebruiker:focus, .gebruiker:hover {
+    color: #fff;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #2980b9;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        padding: 5px 0;
+    }
 }

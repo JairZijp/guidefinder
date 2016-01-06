@@ -213,6 +213,29 @@ You have <input readonly type="text" name="countdown" size="3" value="350"> char
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
+                                    <p>Social media accounts</p>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
+                                        <input type="text" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
+Enter the entire link!">
+                                    </div>
+                                    </p>
+                                    <p>
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
+                                            <input type="text" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
+Enter the entire link!">
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
+                                            <input type="text" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="
+Enter the entire link!">
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="col-xs-12">
                                     <div class="row">
                                         <div class="col-xs-12 text-right">
                                             <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">

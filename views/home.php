@@ -16,7 +16,6 @@
         var marker = new google.maps.Marker({
             map: map,
             position: location,
-            animation: google.maps.Animation.DROP,
             draggable: false,
             title: "Uw locatie"
         });
@@ -85,8 +84,8 @@
 
         var toggleHeader = function (noAnimate) {
 
-            var threshold = 40,
-                fadeLength = 150,
+            var threshold = 50,
+                fadeLength = 100,
                 opacity,
                 scrollTop = $(document).scrollTop();
 
@@ -126,7 +125,7 @@
         </div>
         <figure id="pijltje"></figure>
         <div id="maps"></div>
-        <div id="vragenbox" class="flex">
+<div id="vragenbox" class="flex">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 zoeken hidden">
@@ -136,7 +135,7 @@
                             <button id="here">Here!</button>
                         </a>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag1">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 vragen" id="vraag1">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -147,11 +146,13 @@
                                 <span class="sr-only">Error:</span> Please fill in a placename
                             </div>
                         </div>
+                        <div class="col-xs-12">
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
                             <input type="text" name="where" class="form-control input-md" placeholder="Fill in a placename.." id="tags" value="" tabindex="2">
                         </div>
-                        <div class="col-sm-2 col-xs-12 marto20">
+                        <div class="col-sm-2 col-xs-12 marto20 nopad">
                             <button type="button" class="btn btn-default volgende" onclick="ValidateForm">Next &raquo;</button>
+                        </div>
                         </div>
                         <div class="col-sd-offset-3 col-sd-6 col-xs-12">
                             <div class="row marto20">
@@ -172,12 +173,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag2" style="display:none;">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 vragen" id="vraag2" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
                             <h2>Step 2</h2>
-                            <h3>With how many people are you going to take the tour?</h3></div>
+                            <h3>With how many persons are you going to take the tour?</h3></div>
                         <div class="col-sm-10 col-xs-12 ui-widget marto20">
                             <select class="form-control">
                                 <option value="" disabled selected>Select the number of persons...</option>
@@ -204,7 +205,7 @@
                                 <option value="" disabled>20+ persons - Please contact us</option>
                             </select>
                         </div>
-                        <div class="col-sm-2 col-xs-12 marto20">
+                        <div class="col-sm-2 col-xs-12 marto20 nopad">
                             <button type="button" class="btn btn-default volgende">Next &raquo;</button>
                         </div>
                         <div class="col-sd-offset-3 col-sd-6 col-xs-12">
@@ -231,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag3" style="display:none;">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 vragen" id="vraag3" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -294,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag4" style="display:none;">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 vragen" id="vraag4" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -331,7 +332,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-offset-2 col-xs-8 vragen" id="vraag5" style="display:none;">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 vragen" id="vraag5" style="display:none;">
                         <div class="col-sm-offset-2 col-xs-12 col-sm-8">
                             <h2 class="vindbox">Find your guide in 5 steps!</h2></div>
                         <div class="col-xs-12">
@@ -397,6 +398,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 </header>
 
 <div class="row">
@@ -541,22 +543,22 @@
     <div class="container">
         <div class="col-xs-12">
             <h2 class="center">What people say about us...</h2>
-            <div class="col-xs-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="talkcloud flex">
                     <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
                 </div>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="talkcloud flex">
                     <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
                 </div>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="talkcloud flex">
                     <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
                 </div>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="talkcloud flex">
                     <p>I'm glad i have choosen for Guidefinder. I had a very interesting tour with top service!</p>
                 </div>

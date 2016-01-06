@@ -13,7 +13,7 @@ $guidesInfo = $user->getPublicUserData();
         <div class="col-xs-12 col-md-3 sidebar_links">
            <div class="row">
             <h3><?= $guidesInfo['username']; ?></h3>
-            <div class="col-xs-4 nopad">
+            <div class="col-xs-4 profile-photo">
                 <a role="button" data-action="vergroot" title="Photo of <?= $guidesInfo['username']; ?>" tabindex="0"><img align="left" class="thumbnail sidebar-foto" src="images/profile/<?= $guidesInfo['image']; ?>" alt="Profile image example" /></a>
 
                 <div class="vergroot">
@@ -86,10 +86,33 @@ $guidesInfo = $user->getPublicUserData();
             <hr>
             <p>Phone: <b><?= $guidesInfo['phone']; ?></b></p>
             <p>Email: <b><code><?= $guidesInfo['email']; ?></code></b></p>
-            <p>
-                <a href="#" target="_blank"><i class="fa fa-facebook-official fa-lg pad3"></i></a> <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-lg pad3"></i></a>
-                <a href="#" target="_blank"> <i class="fa fa-twitter-square fa-lg pad3"></i></a>
-            </p>
+            <label for="basic-url">Social media accounts</label>
+                    <a href="#" target="_blank">
+                        <p>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
+                                <input type="text" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
+Enter the entire link!">
+                            </div>
+                        </p>
+                    </a>
+                    <a href="#" target="_blank">
+                        <p>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
+                                <input type="text" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
+Enter the entire link!">
+                            </div>
+                        </p>
+                        <a href="#" target="_blank">
+                            <p>
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
+                                    <input type="text" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="
+Enter the entire link!">
+                                </div>
+                            </p>
+                        </a>
 
         </div>
         <?php
@@ -118,7 +141,9 @@ $guidesInfo = $user->getPublicUserData();
                 ?>
                         <div class="col-md-6">
                             <div class="tour">
+                               <div class="img-tour">
                                 <img class="tour-image" src="images/tours/<?= $infoTour['image']; ?>">
+                                </div>
                                 <h3><?= $infoTour['name'];?></h3>
                                 <h4>About the tour:</h4>
                                 <p>
