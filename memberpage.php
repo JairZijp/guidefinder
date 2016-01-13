@@ -143,35 +143,35 @@ return implode($separator, $breadcrumbs);
                 </p>
                 <h4>Languages:</h4>
                 <hr>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/Netherlands.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>Dutch: <span class="pull-right"><b><?= $info['NL']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/United-Kingdom.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>English: <span class="pull-right"><b><?= $info['EN']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/Germany.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>German: <span class="pull-right"><b><?= $info['GE']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/Spain.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>Spanish: <span class="pull-right"><b><?= $info['ES']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/France.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>French: <span class="pull-right"><b><?= $info['FR']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/Italy.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>Italian: <span class="pull-right"><b><?= $info['IT']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/Russia.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>Russian: <span class="pull-right"><b><?= $info['RU']; ?></b></span></p>
                 </div>
-                <div class="col-xs-12 nopad">
+                <div class="col-md-12 nopad">
                     <img src="images/vlaggen/China.png" class="taal-vlag-profiel pull-left" alt="Dutch" title="Dutch" />
                     <p>Chinese: <span class="pull-right"><b><?= $info['CH']; ?></b></span></p>
                 </div>

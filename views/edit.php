@@ -228,21 +228,21 @@ You have <input readonly type="text" name="countdown" size="3" value="350"> char
                                     <p>Social media accounts</p>
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
-                                        <input type="text" name="facebook" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
+                                        <input type="text" name="facebook" value="<?=$info['facebook'] ?>" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                                     </div>
                                     </p>
                                     <p>
                                         <div class="input-group">
                                             <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
-                                            <input type="text" name="twitter" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
+                                            <input type="text" name="twitter" value="<?=$info['twitter']; ?>" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                                         </div>
                                     </p>
                                     <p>
                                         <div class="input-group">
                                             <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
-                                            <input type="text" name="linkedin" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="Enter the entire link!">
+                                            <input type="text" name="linkedin" value="<?=$info['linkedin']; ?>" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="Enter the entire link!">
                                         </div>
                                     </p>
                                 </div>

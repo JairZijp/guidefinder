@@ -48,7 +48,6 @@ class User extends Password {
 
         return $guidesInfo;
 
-
     }
 
     public function updateUserData($username,$email,$firstname,$lastname,$address,$zipcode,$city,$phone,$image,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH,$twitter,$facebook,$linkedin) {
@@ -80,6 +79,39 @@ class User extends Password {
 
         return $result;
 
+    }
+
+    public function clickedEditTour($tourID) {
+
+        $result = $this->_db->prepare('SELECT * FROM tours WHERE id = :tourid');
+
+        $result->execute(array('tourid' => $tourID ));
+
+        $selectedTourInfo = $result->fetchAll();
+
+        return $selectedTourInfo;
+
+
+    }
+
+    public function updateTourData($username, $name, $price, $description, $id, $image, $adults, $disabled, $children, $aged) {
+
+        $result = $this->_db->prepare('UPDATE tours SET name = :name, price = :price, description = :description, image = :image, adults = :adults, disabled = :disabled, children = :children, aged = :aged WHERE username = :username AND id = :tourid');
+
+        $result->execute(array(
+            "username" => $username,
+            "name" => $name,
+            "price" => $price,
+            "description" => $description,
+            "tourid" => $id,
+            "image" => $image,
+            "adults" => $adults,
+            "disabled" => $disabled,
+            "children" => $children,
+            "aged" => $aged
+        ));
+
+        return $result;
     }
 
     public function getUserTour($username) {
