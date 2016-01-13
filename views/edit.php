@@ -5,7 +5,6 @@ if(!$user->is_logged_in()){ header('Location: index.php?page=login'); }
 //define page title
 $title = 'Edit Personal Page | GuideFinder';
 
-
 ?>
     <script>
         function limitText(limitField, limitCount, limitNum) {
@@ -22,6 +21,19 @@ $title = 'Edit Personal Page | GuideFinder';
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <?php
+                $selected = (isset($_GET['selected']))?$_GET['selected']:"";
+
+                switch ($selected) {
+                    case 'edit-tours':
+                        include('views/edit-tours.php');
+                        break;
+                    case 'edit-reviews':
+                        include('views/edit-reviews.php');
+                        break;
+                    case 'edit-times':
+                        include('views/edit-times.php');
+                        break;
+                    default:
 
 				$userInfo = $user->getUserData($_SESSION['username']);
 
@@ -301,6 +313,8 @@ Enter the entire link!">
 					header('Location: memberpage.php');
 				}
 			}
+                break;
+            }
 				?>
 
             </div>
@@ -309,8 +323,3 @@ Enter the entire link!">
 
     </div>
     </div>
-
-    <?php
-//include header template
-require('layout/footer.php');
-?>

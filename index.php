@@ -30,16 +30,6 @@ switch ($page) {
 		$title = 'All Guides';
 		include('views/allGuides.php');
 		break;
-	case 'times':
-		include('views/times.php');
-		# code...
-		break;
-	case 'reviews':
-		include('views/reviews.php');
-		break;
-	case 'tours':
-		include('views/editTours.php');
-		break;
 	case 'editprofile':
 		include('views/edit.php');
 		break;

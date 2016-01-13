@@ -20,7 +20,7 @@ $title = 'Edit Times Page | GuideFinder';
 				foreach($userInfo as $info) {
 					?>
                     <h3>Edit Times</h3>
-            <?php
+                    <?php
                 include('layout/head-edit-profile.php');
 
 				?>
@@ -34,7 +34,8 @@ $title = 'Edit Times Page | GuideFinder';
                 </label></div>
                 <div class="col-md-6 col-xs-12">
                     <table class="table table-striped custab">
-                        <h3><?php
+                        <h3>
+                        <?php
                         $ddate = "2015-12-07";
                         $duedt = explode("-", $ddate);
                         $date  = mktime(0, 0, 0, $duedt[1], $duedt[2], $duedt[0]);
@@ -188,7 +189,3 @@ echo "Weeknummer: " . $week;
         </div>
     </div>
 </div>
-    <?php
-//include header template
-require('layout/footer.php');
-?>
