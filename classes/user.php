@@ -141,7 +141,7 @@ class User extends Password {
     }
 
     public function searchGuides($term) {
-        
+
     }
     public function getAllGuidesAdmin(){
         $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes"');

@@ -168,7 +168,6 @@ glyphicon glyphicon-transfer pull-right"></span></a></li>
                 <ul class="nav navbar-nav pull-left">
                     <li><a href="#">Find Guide</a></li>
                     <li><a href="#">How it works</a></li>
-                    <li><a href="#">How it works</a></li>
                     <li><a href="index.php?page=allguides">All Guides</a></li>
                     <li><a href="#">All Tours</a></li>
                 </ul>
