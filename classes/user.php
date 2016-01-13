@@ -51,8 +51,8 @@ class User extends Password {
 
     }
 
-    public function updateUserData($username,$email,$firstname,$lastname,$address,$zipcode,$city,$phone,$image,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH) {
-        $result = $this->_db->prepare('UPDATE members SET firstname = :firstname, lastname = :lastname, email = :email, city = :city, address = :address, zipcode = :zipcode, phone = :phone, image = :image, description = :description, NL = :NL, GE = :GE, ES = :ES, RU = :RU, EN = :EN, FR = :FR, IT = :IT, CH = :CH WHERE username = :username');
+    public function updateUserData($username,$email,$firstname,$lastname,$address,$zipcode,$city,$phone,$image,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH,$twitter,$facebook,$linkedin) {
+        $result = $this->_db->prepare('UPDATE members SET firstname = :firstname, lastname = :lastname, email = :email, city = :city, address = :address, zipcode = :zipcode, phone = :phone, image = :image, description = :description, NL = :NL, GE = :GE, ES = :ES, RU = :RU, EN = :EN, FR = :FR, IT = :IT, CH = :CH, twitter = :twitter, facebook = :facebook, linkedin = :linkedin WHERE username = :username');
 
         $result->execute(array(
             'username' => $username,
@@ -72,7 +72,10 @@ class User extends Password {
             ':CH' => $CH,
             ':ES' => $ES,
             ':FR' => $FR,
-            ':IT' => $IT
+            ':IT' => $IT,
+            ':twitter' => $twitter,
+            ':facebook' => $facebook,
+            ':linkedin' => $linkedin
         ));
 
         return $result;

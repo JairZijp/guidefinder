@@ -184,28 +184,28 @@ return implode($separator, $breadcrumbs);
                 <p>Phone: <b><?= $info['phone']; ?></b></p>
                 <p>Email: <b><code><?= $info['email']; ?></code></b></p>
                 <label for="basic-url">Social media accounts</label>
-                    <a href="#" target="_blank">
+                    <a href="<?= $info['facebook'] ?>" target="_blank">
                         <p>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
-                                <input type="text" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
+                                <input type="text" class="form-control" id="basic-url" placeholder="<?= $info['facebook'] ?>" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                             </div>
                         </p>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="<?= $info['twitter'] ?>" target="_blank">
                         <p>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
-                                <input type="text" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
+                                <input type="text" class="form-control" id="basic-url" placeholder="<?= $info['twitter'] ?>" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                             </div>
                         </p>
-                        <a href="#" target="_blank">
+                        <a href="<?= $info['linkedin'] ?>" target="_blank">
                             <p>
                                 <div class="input-group">
                                     <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
-                                    <input type="text" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="
+                                    <input type="text" class="form-control" id="basic-url" placeholder="<?= $info['linkedin'] ?>" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                                 </div>
                             </p>
@@ -225,7 +225,7 @@ Enter the entire link!">
             ?>
             <div class="col-xs-12 col-sm-9 profielcontent">
                 <?php
-                
+
                     $active = "active";
                     include('layout/head-view-profile.php');?>
                     <div class="col-xs-12" id="locations">

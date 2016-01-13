@@ -228,22 +228,21 @@ You have <input readonly type="text" name="countdown" size="3" value="350"> char
                                     <p>Social media accounts</p>
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
-                                        <input type="text" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
+                                        <input type="text" name="facebook" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                                     </div>
                                     </p>
                                     <p>
                                         <div class="input-group">
                                             <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
-                                            <input type="text" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
+                                            <input type="text" name="twitter" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
 Enter the entire link!">
                                         </div>
                                     </p>
                                     <p>
                                         <div class="input-group">
                                             <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
-                                            <input type="text" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="
-Enter the entire link!">
+                                            <input type="text" name="linkedin" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="Enter the entire link!">
                                         </div>
                                     </p>
                                 </div>
@@ -305,8 +304,11 @@ Enter the entire link!">
 					$IT = $_POST['IT'];
 					$CH = $_POST['CH'];
 					$ES = $_POST['ES'];
+                    $twitter = $_POST['twitter'];
+                    $facebook = $_POST['facebook'];
+                    $linkedin = $_POST['linkedin'];
 					$description = $_POST['limitedtextarea'];
-					$user->updateUserData($_SESSION['username'],$_POST['email'],$_POST['firstname'],$_POST['lastname'],$_POST['address'],$_POST['zipcode'],$_POST['city'],$_POST['number'],$newName . $extensie,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH);
+					$user->updateUserData($_SESSION['username'],$_POST['email'],$_POST['firstname'],$_POST['lastname'],$_POST['address'],$_POST['zipcode'],$_POST['city'],$_POST['number'],$newName . $extensie,$description,$NL,$GE,$ES,$RU,$EN,$FR,$IT,$CH,$twitter,$facebook,$linkedin);
 					//move_uploaded_file($_FILES['image']['tmp_name'], 'images/profile/'. $newName);
 
 					//echo "<script> window.location = 'memberpage.php';</script>";

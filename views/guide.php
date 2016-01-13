@@ -87,33 +87,32 @@ $guidesInfo = $user->getPublicUserData();
             <p>Phone: <b><?= $guidesInfo['phone']; ?></b></p>
             <p>Email: <b><code><?= $guidesInfo['email']; ?></code></b></p>
             <label for="basic-url">Social media accounts</label>
-                    <a href="#" target="_blank">
+                <a href="<?= $info['facebook'] ?>" target="_blank">
+                    <p>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
+                            <input type="text" class="form-control" id="basic-url" placeholder="<?= $info['facebook'] ?>" aria-describedby="basic-addon3" title="
+    Enter the entire link!">
+                        </div>
+                    </p>
+                </a>
+                <a href="<?= $info['twitter'] ?>" target="_blank">
+                    <p>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
+                            <input type="text" class="form-control" id="basic-url" placeholder="<?= $info['twitter'] ?>" aria-describedby="basic-addon3" title="
+    Enter the entire link!">
+                        </div>
+                    </p>
+                    <a href="<?= $info['linkedin'] ?>" target="_blank">
                         <p>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-facebook-official" alt="Facebook"></i></span>
-                                <input type="text" class="form-control" id="basic-url" placeholder="http://www.facebook.com/yourname" aria-describedby="basic-addon3" title="
-Enter the entire link!">
+                                <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
+                                <input type="text" class="form-control" id="basic-url" placeholder="<?= $info['linkedin'] ?>" aria-describedby="basic-addon3" title="
+    Enter the entire link!">
                             </div>
                         </p>
                     </a>
-                    <a href="#" target="_blank">
-                        <p>
-                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3" title="Twitter"><i class="fa fa-twitter" alt="Twitter"></i></span>
-                                <input type="text" class="form-control" id="basic-url" placeholder="http://www.twitter.com/yourname" aria-describedby="basic-addon3" title="
-Enter the entire link!">
-                            </div>
-                        </p>
-                        <a href="#" target="_blank">
-                            <p>
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="basic-addon3" title="Facebook"><i class="fa fa-linkedin" alt="Facebook"></i></span>
-                                    <input type="text" class="form-control" id="basic-url" placeholder="http://www.linkedin.com/yourname" aria-describedby="basic-addon3" title="
-Enter the entire link!">
-                                </div>
-                            </p>
-                        </a>
-
         </div>
         <?php
         $selected = (isset($_GET['selected']))?$_GET['selected']:"";
