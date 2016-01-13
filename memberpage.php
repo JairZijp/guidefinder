@@ -177,7 +177,7 @@ return implode($separator, $breadcrumbs);
                 </div>
                 <h4>Tours</h4>
                 <hr>
-                <p>Active tours: <b>2</b></p>
+                <p>Active tours: <b><?php $countTours = $user->countTours($info['username']); echo $countTours ?></b></p>
                 <p>Given tours: <b>56</b></p>
                 <h4>Contact</h4>
                 <hr>
@@ -229,7 +229,7 @@ Enter the entire link!">
                     $active = "active";
                     include('layout/head-view-profile.php');?>
                     <div class="col-xs-12" id="locations">
-                        <h3>Tours:</h3>
+                        <h3>Tours(<?php $countTours = $user->countTours($info['username']); echo $countTours ?>):</h3>
 
                         <?php
 				$tourInfo = $user->getUserTour($_SESSION['username']);

@@ -40,7 +40,7 @@ $title = 'Edit Times Page | GuideFinder';
                         $duedt = explode("-", $ddate);
                         $date  = mktime(0, 0, 0, $duedt[1], $duedt[2], $duedt[0]);
                         $week  = (int)date('W', $date);
-                        echo "Weeknummer: " . $week;
+
 
                         $userInfo = $user->getUserData($_SESSION['username']);
 
@@ -115,14 +115,14 @@ $title = 'Edit Times Page | GuideFinder';
 
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <table class="table table-striped custab">
+                    <!--<table class="table table-striped custab">
                         <h3><?php
 
 $ddate = "2015-12-14";
 $duedt = explode("-", $ddate);
 $date  = mktime(0, 0, 0, $duedt[1], $duedt[2], $duedt[0]);
 $week  = (int)date('W', $date);
-echo "Weeknummer: " . $week;
+
 ?></h3>
                         <thead>
                             <tr>
@@ -174,7 +174,7 @@ echo "Weeknummer: " . $week;
                             <td>12:00</td>
                             <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
                         </tr>
-                    </table>
+                    </table>-->
                 </div>
                 <div class="col-xs-12 text-right">
                     <input type="submit" name="submit" value="Update Profile" class="btn btn-success" tabindex="5">

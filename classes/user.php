@@ -124,6 +124,46 @@ class User extends Password {
 
         return $tourInfo;
 
+    }
+
+    public function getUserReviews($username) {
+
+        $result = $this->_db->prepare('SELECT * FROM reviews WHERE username = :username ');
+
+        $result->execute(array('username' => $username));
+
+        $reviewInfo = $result->fetchAll();
+
+        return $reviewInfo;
+
+    }
+
+    public function addReview($username, $id, $name, $email, $phone, $rating, $message) {
+
+        $statement = $this->_db->prepare('INSERT INTO reviews(memberID, username, name, email, phone, rating, message) VALUES (:memberID, :username, :name, :email, :phone, :rating, :message)');
+
+        $statement->execute(array(
+            "memberID" => $id,
+            "username" => $username,
+            "name" => $name,
+            "email" => $email,
+            "phone" => $phone,
+            "rating" => $rating,
+            "message" => $message
+        ));
+
+        return $statement;
+
+    }
+    public function countTours($username) {
+
+        $result = $this->_db->prepare('SELECT count(*) FROM tours WHERE username = :username ');
+
+        $result->execute(array('username' => $username));
+
+        $tourCount= $result->fetchColumn();
+
+        return $tourCount;
 
     }
 
@@ -175,9 +215,6 @@ class User extends Password {
 
     }
 
-    public function searchGuides($term) {
-
-    }
     public function getAllGuidesAdmin(){
         $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes"');
 
