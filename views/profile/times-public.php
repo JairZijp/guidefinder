@@ -18,34 +18,34 @@
                 </thead>
                 <tr>
                     <td>Monday</td>
-                    <td><?= $info['monday']; ?></td>
+                    <td><?= $infoTimes['monday']; ?></td>
                 </tr>
                 <tr>
                     <td>Tuesday</td>
-                    <td><?= $info['tuesday']; ?></td>
+                    <td><?= $infoTimes['tuesday']; ?></td>
                 </tr>
                 <tr>
                     <td>Wednesday</td>
-                    <td><?= $info['wednesday']; ?></td>
+                    <td><?= $infoTimes['wednesday']; ?></td>
                 </tr>
                 <tr>
                     <td>Thursday</td>
-                    <td><?= $info['thursday']; ?></td>
+                    <td><?= $infoTimes['thursday']; ?></td>
 
                 </tr>
                 <tr>
                     <td>Friday</td>
-                    <td><?= $info['friday']; ?></td>
+                    <td><?= $infoTimes['friday']; ?></td>
 
                 </tr>
                 <tr>
                     <td>Saturday</td>
-                    <td><?= $info['saturday']; ?></td>
+                    <td><?= $infoTimes['saturday']; ?></td>
 
                 </tr>
                 <tr>
                     <td>Sunday</td>
-                    <td><?= $info['sunday']; ?></td>
+                    <td><?= $infoTimes['sunday']; ?></td>
 
                 </tr>
             </table>

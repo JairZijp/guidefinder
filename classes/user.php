@@ -167,6 +167,15 @@ class User extends Password {
 
     }
 
+    public function getReviewsProfile($username) {
+        $result = $this->_db->prepare('SELECT * FROM reviews WHERE username = :username');
+
+        $result->execute();
+
+        $allReviews = $result->fetchAll();
+
+        return $allReviews;
+    }
     public function getAllGuides() {
 
         $result = $this->_db->prepare('SELECT * FROM members WHERE active = "Yes" AND activeAdmin = "Yes" AND usertype != "admin"');

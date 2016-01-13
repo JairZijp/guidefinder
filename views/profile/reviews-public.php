@@ -6,8 +6,8 @@
             <h3>Reviews:</h3>
 
             <?php
-    $infoTimes = $user->getPublicUserData();
-    $reviewInfo = $user->getUserReviews($_SESSION['username']);
+    $infoUserReviews = $user->getPublicUserData();
+    $reviewInfo = $user->getUserReviews($infoUserReviews['username']);
 
     foreach($reviewInfo as $infoReview) {
         ?>
@@ -94,8 +94,8 @@
 </div>
 <?php
 if (isset($_POST['submit'])) {
-    $user->addReview($info['username'],$info['memberID'],$_POST['name'], $_POST['email'], $_POST['phone'], $_POST['rating'], $_POST['message']);
-    header("Location: " . "http://" . $_SERVER['HTTP_HOST'] . $location);
+    $user->addReview($infoUserReviews['username'],$infoUserReviews['memberID'],$_POST['name'], $_POST['email'], $_POST['phone'], $_POST['rating'], $_POST['message']);
+    header("Location: " . "http://" . $_SERVER['HTTP_HOST'] . "/projects/yourguide/");
 }
 ?>
         </div>
