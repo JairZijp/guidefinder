@@ -14,7 +14,7 @@ define('DBNAME','tester');
 //application address
 define('DIR','http://localhost:8888/Guidefinder/');
 define('SITEEMAIL','noreply@domain.com');
-
+error_reporting(0);
 try {
 
 	//create PDO connection
